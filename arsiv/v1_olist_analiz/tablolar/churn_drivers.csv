@@ -1,0 +1,44 @@
+﻿faktor,seviye,n,tekrar_alim_%,ci_alt_%,ci_ust_%
+Yorum puanı (ilk sipariş),1,4625,1.54,1.22,1.93
+Yorum puanı (ilk sipariş),2,1635,1.41,0.94,2.1
+Yorum puanı (ilk sipariş),3,4491,1.74,1.39,2.16
+Yorum puanı (ilk sipariş),4,10565,1.66,1.43,1.92
+Yorum puanı (ilk sipariş),5,30762,1.92,1.78,2.08
+Yorum puanı (ilk sipariş),yorum yok,387,1.29,0.55,2.99
+Teslimat gecikmesi (tahmini tarihe göre),zamanında / erken,49309,1.82,1.71,1.95
+Teslimat gecikmesi (tahmini tarihe göre),1-7 gün gecikmiş,1797,1.56,1.08,2.24
+Teslimat gecikmesi (tahmini tarihe göre),>7 gün gecikmiş,1359,1.25,0.78,1.99
+Teslimat süresi,≤7 gün,11552,2.05,1.81,2.33
+Teslimat süresi,8-14 gün,23276,1.91,1.74,2.09
+Teslimat süresi,15-21 gün,11023,1.54,1.33,1.79
+Teslimat süresi,>21 gün,6614,1.41,1.15,1.72
+İlk sipariş tutarı (çeyrekler),≤R$61,13117,1.85,1.64,2.1
+İlk sipariş tutarı (çeyrekler),R$61-103,13116,1.68,1.47,1.91
+İlk sipariş tutarı (çeyrekler),R$103-174,13123,1.77,1.56,2.01
+İlk sipariş tutarı (çeyrekler),>R$174,13109,1.9,1.68,2.15
+Siparişteki kalem sayısı,1,47287,1.75,1.64,1.87
+Siparişteki kalem sayısı,2,4020,2.11,1.71,2.61
+Siparişteki kalem sayısı,3+,1158,2.68,1.89,3.77
+Ödeme yöntemi,credit_card,39276,1.77,1.64,1.9
+Ödeme yöntemi,boleto,10907,1.83,1.6,2.1
+Ödeme yöntemi,voucher,1738,2.3,1.69,3.12
+Ödeme yöntemi,debit_card,544,1.65,0.87,3.11
+Taksit,1,25008,1.76,1.61,1.93
+Taksit,2-5,18744,1.73,1.55,1.93
+Taksit,6+,8713,2.05,1.78,2.37
+Eyalet,SP,21334,2.02,1.84,2.22
+Eyalet,RJ,6907,1.9,1.6,2.25
+Eyalet,MG,6349,1.81,1.51,2.17
+Eyalet,RS,2987,1.67,1.27,2.2
+Eyalet,PR,2677,1.46,1.07,1.99
+Eyalet,diğer,12211,1.46,1.26,1.69
+İlk siparişin kategorisi (en büyük 10),bed_bath_table,5113,2.41,2.02,2.86
+İlk siparişin kategorisi (en büyük 10),sports_leisure,4238,2.38,1.97,2.89
+İlk siparişin kategorisi (en büyük 10),health_beauty,4077,1.99,1.6,2.46
+İlk siparişin kategorisi (en büyük 10),furniture_decor,3529,2.07,1.65,2.59
+İlk siparişin kategorisi (en büyük 10),computers_accessories,3393,1.47,1.12,1.94
+İlk siparişin kategorisi (en büyük 10),housewares,2758,1.45,1.07,1.97
+İlk siparişin kategorisi (en büyük 10),toys,2564,1.6,1.18,2.16
+İlk siparişin kategorisi (en büyük 10),cool_stuff,2483,1.13,0.78,1.62
+İlk siparişin kategorisi (en büyük 10),watches_gifts,2462,1.58,1.16,2.16
+İlk siparişin kategorisi (en büyük 10),telephony,2456,1.43,1.03,1.98

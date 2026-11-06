@@ -1,0 +1,945 @@
+{
+  "cohort": {
+    "weighted_retention_pct": {
+      "1": 0.4825731205641698,
+      "2": 0.335891932530588,
+      "3": 0.25866461128457024,
+      "6": 0.22899950294681531,
+      "12": 0.17781425249623856
+    },
+    "repeat_within_days_pct": {
+      "30": 0.6657460734453763,
+      "90": 1.3083942316428914,
+      "180": 1.9940543453695174,
+      "365": 3.3464656070280303
+    },
+    "gap_stats": {
+      "repeaters": 2063,
+      "median": 74.0,
+      "p25": 23.0,
+      "p75": 175.0,
+      "p90": 288.79999999999995,
+      "within_30": 29.762481822588466,
+      "within_90": 54.87154629180805,
+      "within_180": 75.90887057682986,
+      "within_365": 95.78284052350945
+    },
+    "n_cohorts": 19,
+    "cohort_size_min": 752,
+    "cohort_size_max": 7188
+  },
+  "rfm": {
+    "segments": [
+      {
+        "segment": "Şampiyonlar",
+        "musteri": 1093,
+        "musteri_payi_%": 1.1507,
+        "ciro": 357626.21,
+        "ciro_payi_%": 2.2724,
+        "ort_harcama": 327.1969,
+        "ort_siparis_degeri": 150.0315,
+        "ort_recency_gun": 90.2205,
+        "ort_alisveris_gunu": 2.1436,
+        "ort_yorum_puani": 4.278
+      },
+      {
+        "segment": "Uyuyan sadıklar",
+        "musteri": 970,
+        "musteri_payi_%": 1.0212,
+        "ciro": 305378.81,
+        "ciro_payi_%": 1.9404,
+        "ort_harcama": 314.8235,
+        "ort_siparis_degeri": 148.6321,
+        "ort_recency_gun": 312.5701,
+        "ort_alisveris_gunu": 2.067,
+        "ort_yorum_puani": 4.2352
+      },
+      {
+        "segment": "Yeni - yüksek sepet",
+        "musteri": 14793,
+        "musteri_payi_%": 15.5745,
+        "ciro": 4488785.25,
+        "ciro_payi_%": 28.5219,
+        "ort_harcama": 303.4398,
+        "ort_siparis_degeri": 302.1683,
+        "ort_recency_gun": 95.0045,
+        "ort_alisveris_gunu": 1.0,
+        "ort_yorum_puani": 4.0894
+      },
+      {
+        "segment": "Yeni - standart",
+        "musteri": 22199,
+        "musteri_payi_%": 23.3718,
+        "ciro": 1623257.9,
+        "ciro_payi_%": 10.3142,
+        "ort_harcama": 73.123,
+        "ort_siparis_degeri": 73.0288,
+        "ort_recency_gun": 92.863,
+        "ort_alisveris_gunu": 1.0,
+        "ort_yorum_puani": 4.2226
+      },
+      {
+        "segment": "Soğuyanlar",
+        "musteri": 18617,
+        "musteri_payi_%": 19.6006,
+        "ciro": 2859041.67,
+        "ciro_payi_%": 18.1664,
+        "ort_harcama": 153.5716,
+        "ort_siparis_degeri": 151.7961,
+        "ort_recency_gun": 223.5672,
+        "ort_alisveris_gunu": 1.0,
+        "ort_yorum_puani": 3.9693
+      },
+      {
+        "segment": "Kayıp - yüksek değerli",
+        "musteri": 14265,
+        "musteri_payi_%": 15.0186,
+        "ciro": 4422723.49,
+        "ciro_payi_%": 28.1021,
+        "ort_harcama": 310.0402,
+        "ort_siparis_degeri": 306.2705,
+        "ort_recency_gun": 398.4029,
+        "ort_alisveris_gunu": 1.0,
+        "ort_yorum_puani": 4.0664
+      },
+      {
+        "segment": "Kayıp - standart",
+        "musteri": 23045,
+        "musteri_payi_%": 24.2625,
+        "ciro": 1681242.16,
+        "ciro_payi_%": 10.6827,
+        "ort_harcama": 72.9547,
+        "ort_siparis_degeri": 72.6693,
+        "ort_recency_gun": 399.5618,
+        "ort_alisveris_gunu": 1.0,
+        "ort_yorum_puani": 4.1591
+      }
+    ],
+    "top10_rev_share": 38.28856413569552,
+    "top20_rev_share": 53.57615536021978,
+    "repeater_rev_share": 4.212750554992484,
+    "repeater_customer_share": 2.171990482407193
+  },
+  "churn": {
+    "window_days": 180,
+    "lapsed_180_pct": 59.90292897601651,
+    "lapsed_365_pct": 22.80116232549325,
+    "never_returned_pct": 97.8280095175928,
+    "population": {
+      "all": 94982,
+      "delivered_first": 93290,
+      "early_repeat_removed": 273,
+      "eligible": 52465,
+      "positives": 944
+    },
+    "repeat_180_pct": 1.7992947679405318,
+    "auc_logit": [
+      0.569870068959232,
+      0.5429425054609944,
+      0.598345018926363
+    ],
+    "auc_gbm": [
+      0.5530640236235129,
+      0.5250674548566948,
+      0.5818223912327292
+    ],
+    "auc_review_only": 0.5229879689977934,
+    "best_model": "lojistik",
+    "top_decile_capture_pct": 14.948453608247423,
+    "top3_deciles_capture_pct": 38.144329896907216,
+    "test_base_pct": 1.5921867946981823,
+    "lift": [
+      {
+        "desil": 1,
+        "n": 2437,
+        "tekrar_alim_%": 2.38,
+        "lift": 1.495
+      },
+      {
+        "desil": 2,
+        "n": 2437,
+        "tekrar_alim_%": 1.805,
+        "lift": 1.134
+      },
+      {
+        "desil": 3,
+        "n": 2437,
+        "tekrar_alim_%": 1.888,
+        "lift": 1.186
+      },
+      {
+        "desil": 4,
+        "n": 2437,
+        "tekrar_alim_%": 1.847,
+        "lift": 1.16
+      },
+      {
+        "desil": 5,
+        "n": 2437,
+        "tekrar_alim_%": 1.559,
+        "lift": 0.979
+      },
+      {
+        "desil": 6,
+        "n": 2437,
+        "tekrar_alim_%": 1.559,
+        "lift": 0.979
+      },
+      {
+        "desil": 7,
+        "n": 2437,
+        "tekrar_alim_%": 1.477,
+        "lift": 0.928
+      },
+      {
+        "desil": 8,
+        "n": 2437,
+        "tekrar_alim_%": 1.313,
+        "lift": 0.825
+      },
+      {
+        "desil": 9,
+        "n": 2437,
+        "tekrar_alim_%": 1.026,
+        "lift": 0.644
+      },
+      {
+        "desil": 10,
+        "n": 2436,
+        "tekrar_alim_%": 1.067,
+        "lift": 0.67
+      }
+    ],
+    "drivers": [
+      {
+        "faktor": "Yorum puanı (ilk sipariş)",
+        "seviye": "1",
+        "n": 4625,
+        "tekrar_alim_%": 1.535,
+        "ci_alt_%": 1.219,
+        "ci_ust_%": 1.932
+      },
+      {
+        "faktor": "Yorum puanı (ilk sipariş)",
+        "seviye": "2",
+        "n": 1635,
+        "tekrar_alim_%": 1.407,
+        "ci_alt_%": 0.939,
+        "ci_ust_%": 2.102
+      },
+      {
+        "faktor": "Yorum puanı (ilk sipariş)",
+        "seviye": "3",
+        "n": 4491,
+        "tekrar_alim_%": 1.737,
+        "ci_alt_%": 1.394,
+        "ci_ust_%": 2.162
+      },
+      {
+        "faktor": "Yorum puanı (ilk sipariş)",
+        "seviye": "4",
+        "n": 10565,
+        "tekrar_alim_%": 1.656,
+        "ci_alt_%": 1.43,
+        "ci_ust_%": 1.918
+      },
+      {
+        "faktor": "Yorum puanı (ilk sipariş)",
+        "seviye": "5",
+        "n": 30762,
+        "tekrar_alim_%": 1.924,
+        "ci_alt_%": 1.777,
+        "ci_ust_%": 2.084
+      },
+      {
+        "faktor": "Yorum puanı (ilk sipariş)",
+        "seviye": "yorum yok",
+        "n": 387,
+        "tekrar_alim_%": 1.292,
+        "ci_alt_%": 0.553,
+        "ci_ust_%": 2.988
+      },
+      {
+        "faktor": "Teslimat gecikmesi (tahmini tarihe göre)",
+        "seviye": "zamanında / erken",
+        "n": 49309,
+        "tekrar_alim_%": 1.823,
+        "ci_alt_%": 1.709,
+        "ci_ust_%": 1.945
+      },
+      {
+        "faktor": "Teslimat gecikmesi (tahmini tarihe göre)",
+        "seviye": "1-7 gün gecikmiş",
+        "n": 1797,
+        "tekrar_alim_%": 1.558,
+        "ci_alt_%": 1.08,
+        "ci_ust_%": 2.243
+      },
+      {
+        "faktor": "Teslimat gecikmesi (tahmini tarihe göre)",
+        "seviye": ">7 gün gecikmiş",
+        "n": 1359,
+        "tekrar_alim_%": 1.251,
+        "ci_alt_%": 0.782,
+        "ci_ust_%": 1.994
+      },
+      {
+        "faktor": "Teslimat süresi",
+        "seviye": "≤7 gün",
+        "n": 11552,
+        "tekrar_alim_%": 2.052,
+        "ci_alt_%": 1.809,
+        "ci_ust_%": 2.326
+      },
+      {
+        "faktor": "Teslimat süresi",
+        "seviye": "8-14 gün",
+        "n": 23276,
+        "tekrar_alim_%": 1.908,
+        "ci_alt_%": 1.74,
+        "ci_ust_%": 2.091
+      },
+      {
+        "faktor": "Teslimat süresi",
+        "seviye": "15-21 gün",
+        "n": 11023,
+        "tekrar_alim_%": 1.542,
+        "ci_alt_%": 1.328,
+        "ci_ust_%": 1.79
+      },
+      {
+        "faktor": "Teslimat süresi",
+        "seviye": ">21 gün",
+        "n": 6614,
+        "tekrar_alim_%": 1.406,
+        "ci_alt_%": 1.149,
+        "ci_ust_%": 1.719
+      },
+      {
+        "faktor": "İlk sipariş tutarı (çeyrekler)",
+        "seviye": "≤R$61",
+        "n": 13117,
+        "tekrar_alim_%": 1.853,
+        "ci_alt_%": 1.635,
+        "ci_ust_%": 2.098
+      },
+      {
+        "faktor": "İlk sipariş tutarı (çeyrekler)",
+        "seviye": "R$61-103",
+        "n": 13116,
+        "tekrar_alim_%": 1.677,
+        "ci_alt_%": 1.471,
+        "ci_ust_%": 1.912
+      },
+      {
+        "faktor": "İlk sipariş tutarı (çeyrekler)",
+        "seviye": "R$103-174",
+        "n": 13123,
+        "tekrar_alim_%": 1.768,
+        "ci_alt_%": 1.556,
+        "ci_ust_%": 2.008
+      },
+      {
+        "faktor": "İlk sipariş tutarı (çeyrekler)",
+        "seviye": ">R$174",
+        "n": 13109,
+        "tekrar_alim_%": 1.899,
+        "ci_alt_%": 1.679,
+        "ci_ust_%": 2.148
+      },
+      {
+        "faktor": "Siparişteki kalem sayısı",
+        "seviye": "1",
+        "n": 47287,
+        "tekrar_alim_%": 1.751,
+        "ci_alt_%": 1.637,
+        "ci_ust_%": 1.873
+      },
+      {
+        "faktor": "Siparişteki kalem sayısı",
+        "seviye": "2",
+        "n": 4020,
+        "tekrar_alim_%": 2.114,
+        "ci_alt_%": 1.713,
+        "ci_ust_%": 2.607
+      },
+      {
+        "faktor": "Siparişteki kalem sayısı",
+        "seviye": "3+",
+        "n": 1158,
+        "tekrar_alim_%": 2.677,
+        "ci_alt_%": 1.892,
+        "ci_ust_%": 3.775
+      },
+      {
+        "faktor": "Ödeme yöntemi",
+        "seviye": "credit_card",
+        "n": 39276,
+        "tekrar_alim_%": 1.77,
+        "ci_alt_%": 1.644,
+        "ci_ust_%": 1.905
+      },
+      {
+        "faktor": "Ödeme yöntemi",
+        "seviye": "boleto",
+        "n": 10907,
+        "tekrar_alim_%": 1.834,
+        "ci_alt_%": 1.598,
+        "ci_ust_%": 2.103
+      },
+      {
+        "faktor": "Ödeme yöntemi",
+        "seviye": "voucher",
+        "n": 1738,
+        "tekrar_alim_%": 2.301,
+        "ci_alt_%": 1.695,
+        "ci_ust_%": 3.119
+      },
+      {
+        "faktor": "Ödeme yöntemi",
+        "seviye": "debit_card",
+        "n": 544,
+        "tekrar_alim_%": 1.654,
+        "ci_alt_%": 0.873,
+        "ci_ust_%": 3.114
+      },
+      {
+        "faktor": "Taksit",
+        "seviye": "1",
+        "n": 25008,
+        "tekrar_alim_%": 1.763,
+        "ci_alt_%": 1.608,
+        "ci_ust_%": 1.934
+      },
+      {
+        "faktor": "Taksit",
+        "seviye": "2-5",
+        "n": 18744,
+        "tekrar_alim_%": 1.729,
+        "ci_alt_%": 1.552,
+        "ci_ust_%": 1.925
+      },
+      {
+        "faktor": "Taksit",
+        "seviye": "6+",
+        "n": 8713,
+        "tekrar_alim_%": 2.054,
+        "ci_alt_%": 1.777,
+        "ci_ust_%": 2.374
+      },
+      {
+        "faktor": "Eyalet",
+        "seviye": "SP",
+        "n": 21334,
+        "tekrar_alim_%": 2.02,
+        "ci_alt_%": 1.84,
+        "ci_ust_%": 2.218
+      },
+      {
+        "faktor": "Eyalet",
+        "seviye": "RJ",
+        "n": 6907,
+        "tekrar_alim_%": 1.897,
+        "ci_alt_%": 1.601,
+        "ci_ust_%": 2.246
+      },
+      {
+        "faktor": "Eyalet",
+        "seviye": "MG",
+        "n": 6349,
+        "tekrar_alim_%": 1.811,
+        "ci_alt_%": 1.511,
+        "ci_ust_%": 2.17
+      },
+      {
+        "faktor": "Eyalet",
+        "seviye": "RS",
+        "n": 2987,
+        "tekrar_alim_%": 1.674,
+        "ci_alt_%": 1.272,
+        "ci_ust_%": 2.2
+      },
+      {
+        "faktor": "Eyalet",
+        "seviye": "PR",
+        "n": 2677,
+        "tekrar_alim_%": 1.457,
+        "ci_alt_%": 1.068,
+        "ci_ust_%": 1.985
+      },
+      {
+        "faktor": "Eyalet",
+        "seviye": "diğer",
+        "n": 12211,
+        "tekrar_alim_%": 1.458,
+        "ci_alt_%": 1.26,
+        "ci_ust_%": 1.686
+      },
+      {
+        "faktor": "İlk siparişin kategorisi (en büyük 10)",
+        "seviye": "bed_bath_table",
+        "n": 5113,
+        "tekrar_alim_%": 2.406,
+        "ci_alt_%": 2.02,
+        "ci_ust_%": 2.863
+      },
+      {
+        "faktor": "İlk siparişin kategorisi (en büyük 10)",
+        "seviye": "sports_leisure",
+        "n": 4238,
+        "tekrar_alim_%": 2.383,
+        "ci_alt_%": 1.965,
+        "ci_ust_%": 2.887
+      },
+      {
+        "faktor": "İlk siparişin kategorisi (en büyük 10)",
+        "seviye": "health_beauty",
+        "n": 4077,
+        "tekrar_alim_%": 1.987,
+        "ci_alt_%": 1.601,
+        "ci_ust_%": 2.462
+      },
+      {
+        "faktor": "İlk siparişin kategorisi (en büyük 10)",
+        "seviye": "furniture_decor",
+        "n": 3529,
+        "tekrar_alim_%": 2.069,
+        "ci_alt_%": 1.648,
+        "ci_ust_%": 2.593
+      },
+      {
+        "faktor": "İlk siparişin kategorisi (en büyük 10)",
+        "seviye": "computers_accessories",
+        "n": 3393,
+        "tekrar_alim_%": 1.474,
+        "ci_alt_%": 1.12,
+        "ci_ust_%": 1.937
+      },
+      {
+        "faktor": "İlk siparişin kategorisi (en büyük 10)",
+        "seviye": "housewares",
+        "n": 2758,
+        "tekrar_alim_%": 1.45,
+        "ci_alt_%": 1.067,
+        "ci_ust_%": 1.969
+      },
+      {
+        "faktor": "İlk siparişin kategorisi (en büyük 10)",
+        "seviye": "toys",
+        "n": 2564,
+        "tekrar_alim_%": 1.599,
+        "ci_alt_%": 1.181,
+        "ci_ust_%": 2.162
+      },
+      {
+        "faktor": "İlk siparişin kategorisi (en büyük 10)",
+        "seviye": "cool_stuff",
+        "n": 2483,
+        "tekrar_alim_%": 1.128,
+        "ci_alt_%": 0.781,
+        "ci_ust_%": 1.625
+      },
+      {
+        "faktor": "İlk siparişin kategorisi (en büyük 10)",
+        "seviye": "watches_gifts",
+        "n": 2462,
+        "tekrar_alim_%": 1.584,
+        "ci_alt_%": 1.161,
+        "ci_ust_%": 2.158
+      },
+      {
+        "faktor": "İlk siparişin kategorisi (en büyük 10)",
+        "seviye": "telephony",
+        "n": 2456,
+        "tekrar_alim_%": 1.425,
+        "ci_alt_%": 1.026,
+        "ci_ust_%": 1.975
+      }
+    ]
+  },
+  "basket": {
+    "orders": 98197,
+    "avg_items_per_order": 1.1415521859119933,
+    "single_item_pct": 90.06079615466868,
+    "multi_item_pct": 9.939203845331324,
+    "multi_category_pct": 0.7994134240353575,
+    "multi_item_same_category_pct": 9.139790421295967,
+    "n_multi_category_orders": 726,
+    "min_pair": 10,
+    "aov_single": 150.50561179144475,
+    "aov_multi_item": 248.74904713114756,
+    "aov_multi_category": 259.38569426751593,
+    "pairs_over_min": 17,
+    "top_pairs_by_count": [
+      {
+        "kategori_A": "bed_bath_table",
+        "kategori_B": "furniture_decor",
+        "birlikte_siparis": 70,
+        "destek_tum_siparis_%": 0.071,
+        "guven_A->B_%": 0.745,
+        "guven_B->A_%": 1.089,
+        "lift_cok_kategorili": 1.264,
+        "A_siparis": 9399,
+        "B_siparis": 6425
+      },
+      {
+        "kategori_A": "bed_bath_table",
+        "kategori_B": "home_confort",
+        "birlikte_siparis": 43,
+        "destek_tum_siparis_%": 0.044,
+        "guven_A->B_%": 0.457,
+        "guven_B->A_%": 10.831,
+        "lift_cok_kategorili": 3.153,
+        "A_siparis": 9399,
+        "B_siparis": 397
+      },
+      {
+        "kategori_A": "furniture_decor",
+        "kategori_B": "housewares",
+        "birlikte_siparis": 24,
+        "destek_tum_siparis_%": 0.024,
+        "guven_A->B_%": 0.374,
+        "guven_B->A_%": 0.41,
+        "lift_cok_kategorili": 0.841,
+        "A_siparis": 6425,
+        "B_siparis": 5847
+      },
+      {
+        "kategori_A": "baby",
+        "kategori_B": "cool_stuff",
+        "birlikte_siparis": 20,
+        "destek_tum_siparis_%": 0.02,
+        "guven_A->B_%": 0.697,
+        "guven_B->A_%": 0.553,
+        "lift_cok_kategorili": 2.366,
+        "A_siparis": 2868,
+        "B_siparis": 3616
+      },
+      {
+        "kategori_A": "bed_bath_table",
+        "kategori_B": "housewares",
+        "birlikte_siparis": 20,
+        "destek_tum_siparis_%": 0.02,
+        "guven_A->B_%": 0.213,
+        "guven_B->A_%": 0.342,
+        "lift_cok_kategorili": 0.719,
+        "A_siparis": 9399,
+        "B_siparis": 5847
+      },
+      {
+        "kategori_A": "baby",
+        "kategori_B": "toys",
+        "birlikte_siparis": 19,
+        "destek_tum_siparis_%": 0.019,
+        "guven_A->B_%": 0.662,
+        "guven_B->A_%": 0.493,
+        "lift_cok_kategorili": 2.966,
+        "A_siparis": 2868,
+        "B_siparis": 3855
+      },
+      {
+        "kategori_A": "baby",
+        "kategori_B": "bed_bath_table",
+        "birlikte_siparis": 17,
+        "destek_tum_siparis_%": 0.017,
+        "guven_A->B_%": 0.593,
+        "guven_B->A_%": 0.181,
+        "lift_cok_kategorili": 0.67,
+        "A_siparis": 2868,
+        "B_siparis": 9399
+      },
+      {
+        "kategori_A": "furniture_decor",
+        "kategori_B": "garden_tools",
+        "birlikte_siparis": 17,
+        "destek_tum_siparis_%": 0.017,
+        "guven_A->B_%": 0.265,
+        "guven_B->A_%": 0.485,
+        "lift_cok_kategorili": 0.833,
+        "A_siparis": 6425,
+        "B_siparis": 3505
+      }
+    ],
+    "top_pairs_by_lift": [
+      {
+        "kategori_A": "health_beauty",
+        "kategori_B": "perfumery",
+        "birlikte_siparis": 11,
+        "destek_tum_siparis_%": 0.011,
+        "guven_A->B_%": 0.125,
+        "guven_B->A_%": 0.35,
+        "lift_cok_kategorili": 4.63,
+        "A_siparis": 8799,
+        "B_siparis": 3146
+      },
+      {
+        "kategori_A": "bed_bath_table",
+        "kategori_B": "home_confort",
+        "birlikte_siparis": 43,
+        "destek_tum_siparis_%": 0.044,
+        "guven_A->B_%": 0.457,
+        "guven_B->A_%": 10.831,
+        "lift_cok_kategorili": 3.153,
+        "A_siparis": 9399,
+        "B_siparis": 397
+      },
+      {
+        "kategori_A": "baby",
+        "kategori_B": "toys",
+        "birlikte_siparis": 19,
+        "destek_tum_siparis_%": 0.019,
+        "guven_A->B_%": 0.662,
+        "guven_B->A_%": 0.493,
+        "lift_cok_kategorili": 2.966,
+        "A_siparis": 2868,
+        "B_siparis": 3855
+      },
+      {
+        "kategori_A": "baby",
+        "kategori_B": "cool_stuff",
+        "birlikte_siparis": 20,
+        "destek_tum_siparis_%": 0.02,
+        "guven_A->B_%": 0.697,
+        "guven_B->A_%": 0.553,
+        "lift_cok_kategorili": 2.366,
+        "A_siparis": 2868,
+        "B_siparis": 3616
+      },
+      {
+        "kategori_A": "health_beauty",
+        "kategori_B": "sports_leisure",
+        "birlikte_siparis": 14,
+        "destek_tum_siparis_%": 0.014,
+        "guven_A->B_%": 0.159,
+        "guven_B->A_%": 0.182,
+        "lift_cok_kategorili": 2.199,
+        "A_siparis": 8799,
+        "B_siparis": 7673
+      },
+      {
+        "kategori_A": "construction_tools_lights",
+        "kategori_B": "furniture_decor",
+        "birlikte_siparis": 11,
+        "destek_tum_siparis_%": 0.011,
+        "guven_A->B_%": 4.527,
+        "guven_B->A_%": 0.171,
+        "lift_cok_kategorili": 2.186,
+        "A_siparis": 243,
+        "B_siparis": 6425
+      },
+      {
+        "kategori_A": "furniture_decor",
+        "kategori_B": "home_construction",
+        "birlikte_siparis": 13,
+        "destek_tum_siparis_%": 0.013,
+        "guven_A->B_%": 0.202,
+        "guven_B->A_%": 2.658,
+        "lift_cok_kategorili": 1.788,
+        "A_siparis": 6425,
+        "B_siparis": 489
+      },
+      {
+        "kategori_A": "bed_bath_table",
+        "kategori_B": "furniture_decor",
+        "birlikte_siparis": 70,
+        "destek_tum_siparis_%": 0.071,
+        "guven_A->B_%": 0.745,
+        "guven_B->A_%": 1.089,
+        "lift_cok_kategorili": 1.264,
+        "A_siparis": 9399,
+        "B_siparis": 6425
+      }
+    ],
+    "repeaters": 2063,
+    "repeaters_single_category_pct": 36.015511391177895,
+    "repeaters_back_to_first_category_pct": 39.60252060106641
+  },
+  "forecast": {
+    "weeks": 85,
+    "last_full_week": "2018-08-13",
+    "horizon": 14,
+    "best_model": "Log-doğrusal trend (son 26 hafta)",
+    "metrics": [
+      {
+        "model": "Log-doğrusal trend (son 26 hafta)",
+        "WAPE_h1-4_%": 15.77,
+        "WAPE_h5-14_%": 18.9,
+        "WAPE_h1-14_%": 17.95,
+        "yanlilik_h1-14_%": 7.87,
+        "test_sayisi": 678
+      },
+      {
+        "model": "Sönümlü Holt (log ölçeği)",
+        "WAPE_h1-4_%": 16.25,
+        "WAPE_h5-14_%": 19.88,
+        "WAPE_h1-14_%": 18.77,
+        "yanlilik_h1-14_%": -8.12,
+        "test_sayisi": 678
+      },
+      {
+        "model": "Naif: son 4 hafta ortalaması",
+        "WAPE_h1-4_%": 16.58,
+        "WAPE_h5-14_%": 20.12,
+        "WAPE_h1-14_%": 19.04,
+        "yanlilik_h1-14_%": -8.62,
+        "test_sayisi": 678
+      },
+      {
+        "model": "Naif: son 13 hafta ortalaması",
+        "WAPE_h1-4_%": 17.99,
+        "WAPE_h5-14_%": 23.07,
+        "WAPE_h1-14_%": 21.52,
+        "yanlilik_h1-14_%": -13.69,
+        "test_sayisi": 678
+      }
+    ],
+    "bf_week_revenue": 472699.73,
+    "bf_uplift": 2.431409810345554,
+    "ratio_quantiles": {
+      "h1-4": [
+        0.7586704445193115,
+        0.9766868815796678,
+        1.2624635355960026
+      ],
+      "h5-14": [
+        0.6485099886820508,
+        0.9393369462587875,
+        1.171137172606407
+      ]
+    },
+    "total_ratio_q": [
+      0.782128177645522,
+      0.9676166882457067,
+      1.0864310547198994
+    ],
+    "n_total_origins": 42,
+    "total_14w_base": 3461220.601902996,
+    "total_14w_with_bf": 3811291.2372516682,
+    "weekly_mean_last8": 258996.925,
+    "weekly_mean_forecast": 247230.04299307117,
+    "ytd17": 2913885.6900000004,
+    "ytd18": 7597631.7700000005,
+    "yoy_pct": 160.73884078822599,
+    "monthly_mean_2018_mar_jul": 1103032.746,
+    "aug18": 996896.15,
+    "forecast_weeks": [
+      {
+        "hafta_baslangic": "2018-08-20",
+        "tahmin_taban": 249914.0,
+        "alt_%10": 189603.0,
+        "ust_%90": 315508.0,
+        "black_friday_senaryosu": 249914.0
+      },
+      {
+        "hafta_baslangic": "2018-08-27",
+        "tahmin_taban": 249499.0,
+        "alt_%10": 189287.0,
+        "ust_%90": 314983.0,
+        "black_friday_senaryosu": 249499.0
+      },
+      {
+        "hafta_baslangic": "2018-09-03",
+        "tahmin_taban": 249084.0,
+        "alt_%10": 188972.0,
+        "ust_%90": 314459.0,
+        "black_friday_senaryosu": 249084.0
+      },
+      {
+        "hafta_baslangic": "2018-09-10",
+        "tahmin_taban": 248669.0,
+        "alt_%10": 188658.0,
+        "ust_%90": 313936.0,
+        "black_friday_senaryosu": 248669.0
+      },
+      {
+        "hafta_baslangic": "2018-09-17",
+        "tahmin_taban": 248256.0,
+        "alt_%10": 160996.0,
+        "ust_%90": 290741.0,
+        "black_friday_senaryosu": 248256.0
+      },
+      {
+        "hafta_baslangic": "2018-09-24",
+        "tahmin_taban": 247843.0,
+        "alt_%10": 160728.0,
+        "ust_%90": 290258.0,
+        "black_friday_senaryosu": 247843.0
+      },
+      {
+        "hafta_baslangic": "2018-10-01",
+        "tahmin_taban": 247430.0,
+        "alt_%10": 160461.0,
+        "ust_%90": 289775.0,
+        "black_friday_senaryosu": 247430.0
+      },
+      {
+        "hafta_baslangic": "2018-10-08",
+        "tahmin_taban": 247019.0,
+        "alt_%10": 160194.0,
+        "ust_%90": 289293.0,
+        "black_friday_senaryosu": 247019.0
+      },
+      {
+        "hafta_baslangic": "2018-10-15",
+        "tahmin_taban": 246608.0,
+        "alt_%10": 159928.0,
+        "ust_%90": 288812.0,
+        "black_friday_senaryosu": 246608.0
+      },
+      {
+        "hafta_baslangic": "2018-10-22",
+        "tahmin_taban": 246198.0,
+        "alt_%10": 159662.0,
+        "ust_%90": 288331.0,
+        "black_friday_senaryosu": 246198.0
+      },
+      {
+        "hafta_baslangic": "2018-10-29",
+        "tahmin_taban": 245788.0,
+        "alt_%10": 159396.0,
+        "ust_%90": 287852.0,
+        "black_friday_senaryosu": 245788.0
+      },
+      {
+        "hafta_baslangic": "2018-11-05",
+        "tahmin_taban": 245379.0,
+        "alt_%10": 159131.0,
+        "ust_%90": 287373.0,
+        "black_friday_senaryosu": 245379.0
+      },
+      {
+        "hafta_baslangic": "2018-11-12",
+        "tahmin_taban": 244971.0,
+        "alt_%10": 158866.0,
+        "ust_%90": 286895.0,
+        "black_friday_senaryosu": 244971.0
+      },
+      {
+        "hafta_baslangic": "2018-11-19",
+        "tahmin_taban": 244564.0,
+        "alt_%10": 158602.0,
+        "ust_%90": 286417.0,
+        "black_friday_senaryosu": 594634.0
+      }
+    ]
+  },
+  "extras": {
+    "revenue_share_first_day_orders_2018_jan_jul_pct": 97.41745696633045,
+    "later_day_orders": 2315,
+    "later_day_order_avg_value": 149.2030151187905,
+    "repeater_post_first_day_spend_avg": 167.42849248666988,
+    "new_customers_per_month_2018_jan_jul": 6494.142857142857,
+    "plus_1pp_repeat_monthly_revenue": 10873.045485645038,
+    "plus_1pp_repeat_pct_of_monthly_revenue": 0.9857409514880384,
+    "doubling_repeat_monthly_revenue": 19563.813853900534,
+    "doubling_repeat_pct_of_monthly_revenue": 1.773638536557149,
+    "eligible_first_orders_over_21d_delivery_pct": 12.606499571142665,
+    "top_two_segments_revenue_share_pct": 56.620000000000005,
+    "top_two_segments_customer_share_pct": 30.59,
+    "yeni_segments_customers": 36992
+  },
+  "verification": {
+    "checks": 29,
+    "passed": 29
+  }
+}

@@ -1,0 +1,35 @@
+﻿faktor,seviye,n,geri_donen,tekrar_alim_%,ga_alt_%,ga_ust_%
+Yorum puanı,1,1354,38,2.8065,2.0514,3.8286
+Yorum puanı,2,556,15,2.6978,1.6416,4.4032
+Yorum puanı,3,1595,39,2.4451,1.7938,3.325
+Yorum puanı,4,3719,107,2.8771,2.3866,3.4649
+Yorum puanı,5,11139,372,3.3396,3.0217,3.6897
+Yorum puanı,yorum yok,133,4,3.0075,1.1756,7.4779
+Teslimat gecikmesi,zamanında / erken,17819,561,3.1483,2.9019,3.415
+Teslimat gecikmesi,1-7 gün gecikmiş,409,11,2.6895,1.5083,4.7512
+Teslimat gecikmesi,>7 gün gecikmiş,268,3,1.1194,0.3814,3.2389
+Teslimat süresi,≤7 gün,4486,145,3.2323,2.7534,3.7912
+Teslimat süresi,8-14 gün,8936,293,3.2789,2.9292,3.6687
+Teslimat süresi,15-21 gün,3498,95,2.7158,2.2268,3.3086
+Teslimat süresi,>21 gün,1576,42,2.665,1.9776,3.5826
+İlk sipariş tutarı (çeyrek),≤R$60,4626,140,3.0264,2.5703,3.5604
+İlk sipariş tutarı (çeyrek),R$60-102,4648,142,3.0551,2.5978,3.5899
+İlk sipariş tutarı (çeyrek),R$102-172,4598,139,3.0231,2.566,3.5585
+İlk sipariş tutarı (çeyrek),>R$172,4624,154,3.3304,2.8508,3.8876
+Kalem sayısı,1,16704,516,3.0891,2.8373,3.3624
+Kalem sayısı,2,1441,49,3.4004,2.5816,4.467
+Kalem sayısı,3+,351,10,2.849,1.5547,5.1642
+Ödeme yöntemi,credit_card,13700,441,3.219,2.9363,3.5279
+Ödeme yöntemi,boleto,3961,100,2.5246,2.0802,3.0611
+Ödeme yöntemi,voucher,680,28,4.1176,2.864,5.8868
+Ödeme yöntemi,debit_card,155,6,3.871,1.7859,8.1873
+İlk siparişin kategorisi (en büyük 10),bed_bath_table,1795,62,3.454,2.7037,4.4032
+İlk siparişin kategorisi (en büyük 10),furniture_decor,1418,66,4.6544,3.6751,5.8788
+İlk siparişin kategorisi (en büyük 10),sports_leisure,1403,68,4.8468,3.8411,6.099
+İlk siparişin kategorisi (en büyük 10),health_beauty,1391,44,3.1632,2.3647,4.2197
+İlk siparişin kategorisi (en büyük 10),computers_accessories,1187,39,3.2856,2.4127,4.4599
+İlk siparişin kategorisi (en büyük 10),housewares,1186,23,1.9393,1.2957,2.8933
+İlk siparişin kategorisi (en büyük 10),cool_stuff,1048,22,2.0992,1.3903,3.158
+İlk siparişin kategorisi (en büyük 10),telephony,906,20,2.2075,1.4335,3.3851
+İlk siparişin kategorisi (en büyük 10),toys,899,19,2.1135,1.3571,3.2773
+İlk siparişin kategorisi (en büyük 10),garden_tools,719,23,3.1989,2.1409,4.7544

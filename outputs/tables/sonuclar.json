@@ -1,0 +1,1564 @@
+{
+  "tanimlar": {
+    "gecerli_siparis_bitis": "2018-08-31 23:59:59",
+    "rfm_tarihi": "2018-09-01",
+    "gozlem_sonu": "2018-08-21",
+    "kohort_baslangic": "2017-01",
+    "son_tam_ay": "2018-07",
+    "churn_esikleri": [
+      180,
+      365
+    ],
+    "ana_churn_esigi": 180
+  },
+  "veri": {
+    "ham_tablo_boyutlari": {
+      "orders": 99441,
+      "customers": 99441,
+      "items": 112650,
+      "payments": 103886,
+      "reviews": 99224,
+      "products": 32951
+    },
+    "filtre": {
+      "toplam_siparis": 99441,
+      "iptal_ulasilamaz_olusturuldu": 1239,
+      "kalemi_yok": 775,
+      "odemesi_yok": 1,
+      "bitis_tarihinden_sonra": 20,
+      "gecerli_siparis": 98197
+    },
+    "siparis": 98197,
+    "musteri": 94982,
+    "ciro": 15738055.49,
+    "ort_siparis_degeri": 160.270227,
+    "ilk_siparis": "2016-09-04 21:15:19",
+    "son_siparis": "2018-08-29 15:00:37",
+    "tek_alisveris_gunu_%": 97.82801,
+    "birden_fazla_siparis_%": 3.03847,
+    "birden_fazla_alisveris_gunu_%": 2.17199,
+    "gunluk_siparis_son_gunler": {
+      "2018-08-15": 283,
+      "2018-08-16": 316,
+      "2018-08-17": 254,
+      "2018-08-18": 196,
+      "2018-08-19": 204,
+      "2018-08-20": 252,
+      "2018-08-21": 239,
+      "2018-08-22": 186,
+      "2018-08-23": 142,
+      "2018-08-24": 97,
+      "2018-08-25": 69,
+      "2018-08-26": 73,
+      "2018-08-27": 66,
+      "2018-08-28": 39,
+      "2018-08-29": 11
+    },
+    "ocak_temmuz_2018_ilk_gun_ciro_payi_%": 97.417457,
+    "ocak_temmuz_2018_aylik_yeni_musteri_ort": 6494.142857
+  },
+  "kohort": {
+    "kohort_sayisi": 18,
+    "ilk_kohort": "2017-01",
+    "son_kohort": "2018-06",
+    "agirlikli_tutunma_%": {
+      "1": 0.480192,
+      "2": 0.340967,
+      "3": 0.264433,
+      "6": 0.232111,
+      "12": 0.190979
+    },
+    "en_yuksek_hucre_%": 0.705829,
+    "n_gunde_tekrar_%": {
+      "30": 0.661469,
+      "90": 1.311926,
+      "180": 2.004012,
+      "365": 3.362849
+    },
+    "n_gunde_tekrar_payda": {
+      "30": 86323,
+      "90": 75614,
+      "180": 54840,
+      "365": 20667
+    },
+    "ikinci_alima_sure": {
+      "tekrar_alan": 2063,
+      "medyan_gun": 74.0,
+      "p25_gun": 23.0,
+      "p75_gun": 175.0,
+      "p90_gun": 288.8,
+      "30_gun_icinde_%": 29.762482,
+      "90_gun_icinde_%": 54.871546,
+      "180_gun_icinde_%": 75.908871,
+      "365_gun_icinde_%": 95.782841
+    },
+    "kohort_90g_min_%": 0.930851,
+    "kohort_90g_max_%": 1.889571,
+    "kasim_2017_90g_%": 1.335559
+  },
+  "rfm": {
+    "kesim_noktalari": {
+      "R_sinirlari_gun": [
+        96.0,
+        180.0,
+        271.0,
+        386.0
+      ],
+      "M_sinirlari_R$": [
+        55.36,
+        87.51,
+        133.05,
+        209.12
+      ]
+    },
+    "segmentler": [
+      {
+        "segment": "Şampiyonlar",
+        "kural": "F ≥ 2 ve R puanı ≥ 4",
+        "musteri": 1093,
+        "musteri_payi_%": 1.150744,
+        "ciro": 357626.21,
+        "ciro_payi_%": 2.272366,
+        "ort_harcama": 327.196898,
+        "ort_siparis_degeri": 150.031479,
+        "ort_recency_gun": 90.220494,
+        "ort_alisveris_gunu": 2.143641,
+        "ort_yorum_puani": 4.277951
+      },
+      {
+        "segment": "Uyuyan sadıklar",
+        "kural": "F ≥ 2 ve R puanı ≤ 3",
+        "musteri": 970,
+        "musteri_payi_%": 1.021246,
+        "ciro": 305378.81,
+        "ciro_payi_%": 1.940385,
+        "ort_harcama": 314.823515,
+        "ort_siparis_degeri": 148.632143,
+        "ort_recency_gun": 312.570103,
+        "ort_alisveris_gunu": 2.06701,
+        "ort_yorum_puani": 4.235204
+      },
+      {
+        "segment": "Yeni - yüksek sepet",
+        "kural": "F = 1, R puanı ≥ 4, M puanı ≥ 4",
+        "musteri": 14793,
+        "musteri_payi_%": 15.57453,
+        "ciro": 4488785.25,
+        "ciro_payi_%": 28.521854,
+        "ort_harcama": 303.43982,
+        "ort_siparis_degeri": 302.168258,
+        "ort_recency_gun": 95.004462,
+        "ort_alisveris_gunu": 1.0,
+        "ort_yorum_puani": 4.089438
+      },
+      {
+        "segment": "Yeni - standart",
+        "kural": "F = 1, R puanı ≥ 4, M puanı ≤ 3",
+        "musteri": 22199,
+        "musteri_payi_%": 23.371797,
+        "ciro": 1623257.9,
+        "ciro_payi_%": 10.314221,
+        "ort_harcama": 73.123019,
+        "ort_siparis_degeri": 73.0288,
+        "ort_recency_gun": 92.863012,
+        "ort_alisveris_gunu": 1.0,
+        "ort_yorum_puani": 4.222612
+      },
+      {
+        "segment": "Soğuyanlar",
+        "kural": "F = 1, R puanı = 3",
+        "musteri": 18617,
+        "musteri_payi_%": 19.600556,
+        "ciro": 2859041.67,
+        "ciro_payi_%": 18.166423,
+        "ort_harcama": 153.571557,
+        "ort_siparis_degeri": 151.796145,
+        "ort_recency_gun": 223.56717,
+        "ort_alisveris_gunu": 1.0,
+        "ort_yorum_puani": 3.969263
+      },
+      {
+        "segment": "Kayıp - yüksek değerli",
+        "kural": "F = 1, R puanı ≤ 2, M puanı ≥ 4",
+        "musteri": 14265,
+        "musteri_payi_%": 15.018635,
+        "ciro": 4422723.49,
+        "ciro_payi_%": 28.102096,
+        "ort_harcama": 310.040203,
+        "ort_siparis_degeri": 306.270541,
+        "ort_recency_gun": 398.402874,
+        "ort_alisveris_gunu": 1.0,
+        "ort_yorum_puani": 4.066385
+      },
+      {
+        "segment": "Kayıp - standart",
+        "kural": "F = 1, R puanı ≤ 2, M puanı ≤ 3",
+        "musteri": 23045,
+        "musteri_payi_%": 24.262492,
+        "ciro": 1681242.16,
+        "ciro_payi_%": 10.682655,
+        "ort_harcama": 72.954748,
+        "ort_siparis_degeri": 72.669281,
+        "ort_recency_gun": 399.561814,
+        "ort_alisveris_gunu": 1.0,
+        "ort_yorum_puani": 4.159148
+      }
+    ],
+    "yogunlasma": {
+      "ilk_%10_ciro_payi": 38.288564,
+      "ilk_%20_ciro_payi": 53.576155,
+      "tekrar_alan_musteri_payi_%": 2.17199,
+      "tekrar_alan_ciro_payi_%": 4.212751,
+      "tek_alimli_ort_harcama": 162.238621,
+      "tekrar_alan_ort_harcama": 321.379069
+    }
+  },
+  "churn": {
+    "esik_karsilastirma": [
+      {
+        "esik_gun": 180,
+        "son_alimi_esikten_eski_musteri_%": 59.902929,
+        "tekrar_alanlarin_esik_icinde_donen_payi_%": 75.908871,
+        "penceresi_kapanmis_musteri": 50232,
+        "en_gec_ilk_teslimat": "2018-02-22",
+        "geri_donen": 898,
+        "tekrar_alim_%": 1.787705,
+        "churn_%": 98.212295,
+        "teslimat_7g_alti_tekrar_%": 2.039899,
+        "teslimat_21g_ustu_tekrar_%": 1.383689,
+        "teslimat_farki_p": 0.001937,
+        "model_auc": 0.575892,
+        "baslangic_auc": 0.552054,
+        "model_test_n": 22136,
+        "model_test_pozitif": 342
+      },
+      {
+        "esik_gun": 365,
+        "son_alimi_esikten_eski_musteri_%": 22.801162,
+        "tekrar_alanlarin_esik_icinde_donen_payi_%": 95.782841,
+        "penceresi_kapanmis_musteri": 18496,
+        "en_gec_ilk_teslimat": "2017-08-21",
+        "geri_donen": 575,
+        "tekrar_alim_%": 3.10878,
+        "churn_%": 96.89122,
+        "teslimat_7g_alti_tekrar_%": 3.232278,
+        "teslimat_21g_ustu_tekrar_%": 2.664975,
+        "teslimat_farki_p": 0.262507,
+        "model_auc": 0.547622,
+        "baslangic_auc": 0.533607,
+        "model_test_n": 9131,
+        "model_test_pozitif": 292
+      }
+    ],
+    "180g": {
+      "populasyon": {
+        "tum_musteri": 94982,
+        "ilk_siparisi_teslim_edilen": 93290,
+        "teslimattan_once_tekrar_alan_cikarilan": 273,
+        "penceresi_kapanmis": 50232,
+        "geri_donen": 898
+      },
+      "tekrar_alim_%": 1.787705,
+      "model": {
+        "egitim_bitis": "2017-10-31",
+        "egitim_n": 28096,
+        "egitim_pozitif": 556,
+        "test_n": 22136,
+        "test_pozitif": 342,
+        "test_taban_%": 1.544995,
+        "auc_lojistik": 0.575892,
+        "auc_lojistik_ga": [
+          0.545993,
+          0.61058
+        ],
+        "auc_baslangic_teslimat_kurali": 0.552054,
+        "auc_baslangic_ga": [
+          0.516379,
+          0.58228
+        ],
+        "auc_sabit_tahmin": 0.5,
+        "ilk_desil_yakalama_%": 14.619883,
+        "ilk_3_desil_yakalama_%": 39.473684,
+        "ilk_desil_lift": 1.461724
+      },
+      "testler": [
+        {
+          "karsilastirma": "Teslimat ≤7 gün vs >21 gün",
+          "n_A": 11128,
+          "oran_A_%": 2.039899,
+          "n_B": 6143,
+          "oran_B_%": 1.383689,
+          "fark_puan": 0.656211,
+          "p_degeri": 0.001937,
+          "p_bonferroni": 0.009685,
+          "anlamli_0_05_duzeltilmis": true
+        },
+        {
+          "karsilastirma": "Zamanında vs >7 gün gecikmiş",
+          "n_A": 47250,
+          "oran_A_%": 1.81164,
+          "n_B": 1280,
+          "oran_B_%": 1.25,
+          "fark_puan": 0.56164,
+          "p_degeri": 0.135542,
+          "p_bonferroni": 0.677711,
+          "anlamli_0_05_duzeltilmis": false
+        },
+        {
+          "karsilastirma": "Yorum 5 vs 1",
+          "n_A": 29539,
+          "oran_A_%": 1.922882,
+          "n_B": 4355,
+          "oran_B_%": 1.492537,
+          "fark_puan": 0.430344,
+          "p_degeri": 0.050184,
+          "p_bonferroni": 0.250919,
+          "anlamli_0_05_duzeltilmis": false
+        },
+        {
+          "karsilastirma": "3+ kalem vs 1 kalem",
+          "n_A": 1102,
+          "oran_A_%": 2.540835,
+          "n_B": 45288,
+          "oran_B_%": 1.737767,
+          "fark_puan": 0.803068,
+          "p_degeri": 0.044968,
+          "p_bonferroni": 0.224839,
+          "anlamli_0_05_duzeltilmis": false
+        },
+        {
+          "karsilastirma": "bed_bath_table vs cool_stuff",
+          "n_A": 4945,
+          "oran_A_%": 2.426694,
+          "n_B": 2422,
+          "oran_B_%": 1.114781,
+          "fark_puan": 1.311912,
+          "p_degeri": 0.000155,
+          "p_bonferroni": 0.000776,
+          "anlamli_0_05_duzeltilmis": true
+        }
+      ],
+      "etkenler": [
+        {
+          "faktor": "Yorum puanı",
+          "seviye": "1",
+          "n": 4355,
+          "geri_donen": 65,
+          "tekrar_alim_%": 1.492537,
+          "ga_alt_%": 1.172788,
+          "ga_ust_%": 1.89779
+        },
+        {
+          "faktor": "Yorum puanı",
+          "seviye": "2",
+          "n": 1549,
+          "geri_donen": 22,
+          "tekrar_alim_%": 1.420271,
+          "ga_alt_%": 0.939773,
+          "ga_ust_%": 2.141133
+        },
+        {
+          "faktor": "Yorum puanı",
+          "seviye": "3",
+          "n": 4296,
+          "geri_donen": 73,
+          "tekrar_alim_%": 1.699255,
+          "ga_alt_%": 1.353694,
+          "ga_ust_%": 2.131123
+        },
+        {
+          "faktor": "Yorum puanı",
+          "seviye": "4",
+          "n": 10125,
+          "geri_donen": 165,
+          "tekrar_alim_%": 1.62963,
+          "ga_alt_%": 1.400717,
+          "ga_ust_%": 1.895234
+        },
+        {
+          "faktor": "Yorum puanı",
+          "seviye": "5",
+          "n": 29539,
+          "geri_donen": 568,
+          "tekrar_alim_%": 1.922882,
+          "ga_alt_%": 1.772409,
+          "ga_ust_%": 2.085857
+        },
+        {
+          "faktor": "Yorum puanı",
+          "seviye": "yorum yok",
+          "n": 368,
+          "geri_donen": 5,
+          "tekrar_alim_%": 1.358696,
+          "ga_alt_%": 0.581704,
+          "ga_ust_%": 3.140741
+        },
+        {
+          "faktor": "Teslimat gecikmesi",
+          "seviye": "zamanında / erken",
+          "n": 47250,
+          "geri_donen": 856,
+          "tekrar_alim_%": 1.81164,
+          "ga_alt_%": 1.695239,
+          "ga_ust_%": 1.935877
+        },
+        {
+          "faktor": "Teslimat gecikmesi",
+          "seviye": "1-7 gün gecikmiş",
+          "n": 1702,
+          "geri_donen": 26,
+          "tekrar_alim_%": 1.527615,
+          "ga_alt_%": 1.04459,
+          "ga_ust_%": 2.228961
+        },
+        {
+          "faktor": "Teslimat gecikmesi",
+          "seviye": ">7 gün gecikmiş",
+          "n": 1280,
+          "geri_donen": 16,
+          "tekrar_alim_%": 1.25,
+          "ga_alt_%": 0.770863,
+          "ga_ust_%": 2.020883
+        },
+        {
+          "faktor": "Teslimat süresi",
+          "seviye": "≤7 gün",
+          "n": 11128,
+          "geri_donen": 227,
+          "tekrar_alim_%": 2.039899,
+          "ga_alt_%": 1.793325,
+          "ga_ust_%": 2.319576
+        },
+        {
+          "faktor": "Teslimat süresi",
+          "seviye": "8-14 gün",
+          "n": 22481,
+          "geri_donen": 423,
+          "tekrar_alim_%": 1.881589,
+          "ga_alt_%": 1.712018,
+          "ga_ust_%": 2.067603
+        },
+        {
+          "faktor": "Teslimat süresi",
+          "seviye": "15-21 gün",
+          "n": 10480,
+          "geri_donen": 163,
+          "tekrar_alim_%": 1.555344,
+          "ga_alt_%": 1.335564,
+          "ga_ust_%": 1.810627
+        },
+        {
+          "faktor": "Teslimat süresi",
+          "seviye": ">21 gün",
+          "n": 6143,
+          "geri_donen": 85,
+          "tekrar_alim_%": 1.383689,
+          "ga_alt_%": 1.120469,
+          "ga_ust_%": 1.707676
+        },
+        {
+          "faktor": "İlk sipariş tutarı (çeyrek)",
+          "seviye": "≤R$62",
+          "n": 12568,
+          "geri_donen": 229,
+          "tekrar_alim_%": 1.822088,
+          "ga_alt_%": 1.602545,
+          "ga_ust_%": 2.071075
+        },
+        {
+          "faktor": "İlk sipariş tutarı (çeyrek)",
+          "seviye": "R$62-103",
+          "n": 12548,
+          "geri_donen": 209,
+          "tekrar_alim_%": 1.665604,
+          "ga_alt_%": 1.456016,
+          "ga_ust_%": 1.904779
+        },
+        {
+          "faktor": "İlk sipariş tutarı (çeyrek)",
+          "seviye": "R$103-174",
+          "n": 12566,
+          "geri_donen": 224,
+          "tekrar_alim_%": 1.782588,
+          "ga_alt_%": 1.565536,
+          "ga_ust_%": 2.029112
+        },
+        {
+          "faktor": "İlk sipariş tutarı (çeyrek)",
+          "seviye": ">R$174",
+          "n": 12550,
+          "geri_donen": 236,
+          "tekrar_alim_%": 1.880478,
+          "ga_alt_%": 1.657129,
+          "ga_ust_%": 2.133277
+        },
+        {
+          "faktor": "Kalem sayısı",
+          "seviye": "1",
+          "n": 45288,
+          "geri_donen": 787,
+          "tekrar_alim_%": 1.737767,
+          "ga_alt_%": 1.621444,
+          "ga_ust_%": 1.862277
+        },
+        {
+          "faktor": "Kalem sayısı",
+          "seviye": "2",
+          "n": 3842,
+          "geri_donen": 83,
+          "tekrar_alim_%": 2.160333,
+          "ga_alt_%": 1.74615,
+          "ga_ust_%": 2.670091
+        },
+        {
+          "faktor": "Kalem sayısı",
+          "seviye": "3+",
+          "n": 1102,
+          "geri_donen": 28,
+          "tekrar_alim_%": 2.540835,
+          "ga_alt_%": 1.763675,
+          "ga_ust_%": 3.647733
+        },
+        {
+          "faktor": "Ödeme yöntemi",
+          "seviye": "credit_card",
+          "n": 37530,
+          "geri_donen": 661,
+          "tekrar_alim_%": 1.761258,
+          "ga_alt_%": 1.633028,
+          "ga_ust_%": 1.899362
+        },
+        {
+          "faktor": "Ödeme yöntemi",
+          "seviye": "boleto",
+          "n": 10491,
+          "geri_donen": 190,
+          "tekrar_alim_%": 1.811076,
+          "ga_alt_%": 1.572973,
+          "ga_ust_%": 2.084458
+        },
+        {
+          "faktor": "Ödeme yöntemi",
+          "seviye": "voucher",
+          "n": 1687,
+          "geri_donen": 38,
+          "tekrar_alim_%": 2.252519,
+          "ga_alt_%": 1.64545,
+          "ga_ust_%": 3.076553
+        },
+        {
+          "faktor": "Ödeme yöntemi",
+          "seviye": "debit_card",
+          "n": 524,
+          "geri_donen": 9,
+          "tekrar_alim_%": 1.717557,
+          "ga_alt_%": 0.906182,
+          "ga_ust_%": 3.231726
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "bed_bath_table",
+          "n": 4945,
+          "geri_donen": 120,
+          "tekrar_alim_%": 2.426694,
+          "ga_alt_%": 2.033312,
+          "ga_ust_%": 2.893934
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "sports_leisure",
+          "n": 4036,
+          "geri_donen": 96,
+          "tekrar_alim_%": 2.378593,
+          "ga_alt_%": 1.951799,
+          "ga_ust_%": 2.895955
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "health_beauty",
+          "n": 3863,
+          "geri_donen": 78,
+          "tekrar_alim_%": 2.019156,
+          "ga_alt_%": 1.620932,
+          "ga_ust_%": 2.512715
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "furniture_decor",
+          "n": 3412,
+          "geri_donen": 70,
+          "tekrar_alim_%": 2.051583,
+          "ga_alt_%": 1.627068,
+          "ga_ust_%": 2.583947
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "computers_accessories",
+          "n": 3167,
+          "geri_donen": 48,
+          "tekrar_alim_%": 1.51563,
+          "ga_alt_%": 1.145078,
+          "ga_ust_%": 2.003663
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "housewares",
+          "n": 2654,
+          "geri_donen": 37,
+          "tekrar_alim_%": 1.394122,
+          "ga_alt_%": 1.013122,
+          "ga_ust_%": 1.915631
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "toys",
+          "n": 2516,
+          "geri_donen": 38,
+          "tekrar_alim_%": 1.510334,
+          "ga_alt_%": 1.102342,
+          "ga_ust_%": 2.066175
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "cool_stuff",
+          "n": 2422,
+          "geri_donen": 27,
+          "tekrar_alim_%": 1.114781,
+          "ga_alt_%": 0.767269,
+          "ga_ust_%": 1.617124
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "watches_gifts",
+          "n": 2380,
+          "geri_donen": 37,
+          "tekrar_alim_%": 1.554622,
+          "ga_alt_%": 1.12997,
+          "ga_ust_%": 2.135415
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "telephony",
+          "n": 2326,
+          "geri_donen": 34,
+          "tekrar_alim_%": 1.461737,
+          "ga_alt_%": 1.047904,
+          "ga_ust_%": 2.035636
+        }
+      ]
+    },
+    "365g": {
+      "populasyon": {
+        "tum_musteri": 94982,
+        "ilk_siparisi_teslim_edilen": 93290,
+        "teslimattan_once_tekrar_alan_cikarilan": 273,
+        "penceresi_kapanmis": 18496,
+        "geri_donen": 575
+      },
+      "tekrar_alim_%": 3.10878,
+      "model": {
+        "egitim_bitis": "2017-05-31",
+        "egitim_n": 9365,
+        "egitim_pozitif": 283,
+        "test_n": 9131,
+        "test_pozitif": 292,
+        "test_taban_%": 3.197897,
+        "auc_lojistik": 0.547622,
+        "auc_lojistik_ga": [
+          0.515307,
+          0.58404
+        ],
+        "auc_baslangic_teslimat_kurali": 0.533607,
+        "auc_baslangic_ga": [
+          0.493603,
+          0.564497
+        ],
+        "auc_sabit_tahmin": 0.5,
+        "ilk_desil_yakalama_%": 12.671233,
+        "ilk_3_desil_yakalama_%": 34.589041,
+        "ilk_desil_lift": 1.265876
+      },
+      "testler": [
+        {
+          "karsilastirma": "Teslimat ≤7 gün vs >21 gün",
+          "n_A": 4486,
+          "oran_A_%": 3.232278,
+          "n_B": 1576,
+          "oran_B_%": 2.664975,
+          "fark_puan": 0.567304,
+          "p_degeri": 0.262507,
+          "p_bonferroni": 1.0,
+          "anlamli_0_05_duzeltilmis": false
+        },
+        {
+          "karsilastirma": "Zamanında vs >7 gün gecikmiş",
+          "n_A": 17819,
+          "oran_A_%": 3.148325,
+          "n_B": 268,
+          "oran_B_%": 1.119403,
+          "fark_puan": 2.028922,
+          "p_degeri": 0.057859,
+          "p_bonferroni": 0.289294,
+          "anlamli_0_05_duzeltilmis": false
+        },
+        {
+          "karsilastirma": "Yorum 5 vs 1",
+          "n_A": 11139,
+          "oran_A_%": 3.339618,
+          "n_B": 1354,
+          "oran_B_%": 2.806499,
+          "fark_puan": 0.533118,
+          "p_degeri": 0.298477,
+          "p_bonferroni": 1.0,
+          "anlamli_0_05_duzeltilmis": false
+        },
+        {
+          "karsilastirma": "3+ kalem vs 1 kalem",
+          "n_A": 351,
+          "oran_A_%": 2.849003,
+          "n_B": 16704,
+          "oran_B_%": 3.08908,
+          "fark_puan": -0.240078,
+          "p_degeri": 0.796817,
+          "p_bonferroni": 1.0,
+          "anlamli_0_05_duzeltilmis": false
+        },
+        {
+          "karsilastirma": "bed_bath_table vs cool_stuff",
+          "n_A": 1795,
+          "oran_A_%": 3.454039,
+          "n_B": 1048,
+          "oran_B_%": 2.099237,
+          "fark_puan": 1.354802,
+          "p_degeri": 0.039583,
+          "p_bonferroni": 0.197913,
+          "anlamli_0_05_duzeltilmis": false
+        }
+      ],
+      "etkenler": [
+        {
+          "faktor": "Yorum puanı",
+          "seviye": "1",
+          "n": 1354,
+          "geri_donen": 38,
+          "tekrar_alim_%": 2.806499,
+          "ga_alt_%": 2.051449,
+          "ga_ust_%": 3.828589
+        },
+        {
+          "faktor": "Yorum puanı",
+          "seviye": "2",
+          "n": 556,
+          "geri_donen": 15,
+          "tekrar_alim_%": 2.697842,
+          "ga_alt_%": 1.64161,
+          "ga_ust_%": 4.403243
+        },
+        {
+          "faktor": "Yorum puanı",
+          "seviye": "3",
+          "n": 1595,
+          "geri_donen": 39,
+          "tekrar_alim_%": 2.445141,
+          "ga_alt_%": 1.79377,
+          "ga_ust_%": 3.325036
+        },
+        {
+          "faktor": "Yorum puanı",
+          "seviye": "4",
+          "n": 3719,
+          "geri_donen": 107,
+          "tekrar_alim_%": 2.877118,
+          "ga_alt_%": 2.386566,
+          "ga_ust_%": 3.464921
+        },
+        {
+          "faktor": "Yorum puanı",
+          "seviye": "5",
+          "n": 11139,
+          "geri_donen": 372,
+          "tekrar_alim_%": 3.339618,
+          "ga_alt_%": 3.021713,
+          "ga_ust_%": 3.689695
+        },
+        {
+          "faktor": "Yorum puanı",
+          "seviye": "yorum yok",
+          "n": 133,
+          "geri_donen": 4,
+          "tekrar_alim_%": 3.007519,
+          "ga_alt_%": 1.175634,
+          "ga_ust_%": 7.477875
+        },
+        {
+          "faktor": "Teslimat gecikmesi",
+          "seviye": "zamanında / erken",
+          "n": 17819,
+          "geri_donen": 561,
+          "tekrar_alim_%": 3.148325,
+          "ga_alt_%": 2.901858,
+          "ga_ust_%": 3.414989
+        },
+        {
+          "faktor": "Teslimat gecikmesi",
+          "seviye": "1-7 gün gecikmiş",
+          "n": 409,
+          "geri_donen": 11,
+          "tekrar_alim_%": 2.689487,
+          "ga_alt_%": 1.508262,
+          "ga_ust_%": 4.751185
+        },
+        {
+          "faktor": "Teslimat gecikmesi",
+          "seviye": ">7 gün gecikmiş",
+          "n": 268,
+          "geri_donen": 3,
+          "tekrar_alim_%": 1.119403,
+          "ga_alt_%": 0.381408,
+          "ga_ust_%": 3.238936
+        },
+        {
+          "faktor": "Teslimat süresi",
+          "seviye": "≤7 gün",
+          "n": 4486,
+          "geri_donen": 145,
+          "tekrar_alim_%": 3.232278,
+          "ga_alt_%": 2.753427,
+          "ga_ust_%": 3.79116
+        },
+        {
+          "faktor": "Teslimat süresi",
+          "seviye": "8-14 gün",
+          "n": 8936,
+          "geri_donen": 293,
+          "tekrar_alim_%": 3.278872,
+          "ga_alt_%": 2.929244,
+          "ga_ust_%": 3.668654
+        },
+        {
+          "faktor": "Teslimat süresi",
+          "seviye": "15-21 gün",
+          "n": 3498,
+          "geri_donen": 95,
+          "tekrar_alim_%": 2.715838,
+          "ga_alt_%": 2.226846,
+          "ga_ust_%": 3.308572
+        },
+        {
+          "faktor": "Teslimat süresi",
+          "seviye": ">21 gün",
+          "n": 1576,
+          "geri_donen": 42,
+          "tekrar_alim_%": 2.664975,
+          "ga_alt_%": 1.977578,
+          "ga_ust_%": 3.582574
+        },
+        {
+          "faktor": "İlk sipariş tutarı (çeyrek)",
+          "seviye": "≤R$60",
+          "n": 4626,
+          "geri_donen": 140,
+          "tekrar_alim_%": 3.026373,
+          "ga_alt_%": 2.570342,
+          "ga_ust_%": 3.560356
+        },
+        {
+          "faktor": "İlk sipariş tutarı (çeyrek)",
+          "seviye": "R$60-102",
+          "n": 4648,
+          "geri_donen": 142,
+          "tekrar_alim_%": 3.055077,
+          "ga_alt_%": 2.59777,
+          "ga_ust_%": 3.589921
+        },
+        {
+          "faktor": "İlk sipariş tutarı (çeyrek)",
+          "seviye": "R$102-172",
+          "n": 4598,
+          "geri_donen": 139,
+          "tekrar_alim_%": 3.023054,
+          "ga_alt_%": 2.566011,
+          "ga_ust_%": 3.558528
+        },
+        {
+          "faktor": "İlk sipariş tutarı (çeyrek)",
+          "seviye": ">R$172",
+          "n": 4624,
+          "geri_donen": 154,
+          "tekrar_alim_%": 3.33045,
+          "ga_alt_%": 2.850774,
+          "ga_ust_%": 3.887607
+        },
+        {
+          "faktor": "Kalem sayısı",
+          "seviye": "1",
+          "n": 16704,
+          "geri_donen": 516,
+          "tekrar_alim_%": 3.08908,
+          "ga_alt_%": 2.837285,
+          "ga_ust_%": 3.362448
+        },
+        {
+          "faktor": "Kalem sayısı",
+          "seviye": "2",
+          "n": 1441,
+          "geri_donen": 49,
+          "tekrar_alim_%": 3.400416,
+          "ga_alt_%": 2.581596,
+          "ga_ust_%": 4.467038
+        },
+        {
+          "faktor": "Kalem sayısı",
+          "seviye": "3+",
+          "n": 351,
+          "geri_donen": 10,
+          "tekrar_alim_%": 2.849003,
+          "ga_alt_%": 1.554727,
+          "ga_ust_%": 5.164215
+        },
+        {
+          "faktor": "Ödeme yöntemi",
+          "seviye": "credit_card",
+          "n": 13700,
+          "geri_donen": 441,
+          "tekrar_alim_%": 3.218978,
+          "ga_alt_%": 2.93628,
+          "ga_ust_%": 3.527905
+        },
+        {
+          "faktor": "Ödeme yöntemi",
+          "seviye": "boleto",
+          "n": 3961,
+          "geri_donen": 100,
+          "tekrar_alim_%": 2.524615,
+          "ga_alt_%": 2.080151,
+          "ga_ust_%": 3.061078
+        },
+        {
+          "faktor": "Ödeme yöntemi",
+          "seviye": "voucher",
+          "n": 680,
+          "geri_donen": 28,
+          "tekrar_alim_%": 4.117647,
+          "ga_alt_%": 2.863993,
+          "ga_ust_%": 5.886805
+        },
+        {
+          "faktor": "Ödeme yöntemi",
+          "seviye": "debit_card",
+          "n": 155,
+          "geri_donen": 6,
+          "tekrar_alim_%": 3.870968,
+          "ga_alt_%": 1.785944,
+          "ga_ust_%": 8.187262
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "bed_bath_table",
+          "n": 1795,
+          "geri_donen": 62,
+          "tekrar_alim_%": 3.454039,
+          "ga_alt_%": 2.70371,
+          "ga_ust_%": 4.403175
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "furniture_decor",
+          "n": 1418,
+          "geri_donen": 66,
+          "tekrar_alim_%": 4.654443,
+          "ga_alt_%": 3.675126,
+          "ga_ust_%": 5.878793
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "sports_leisure",
+          "n": 1403,
+          "geri_donen": 68,
+          "tekrar_alim_%": 4.846757,
+          "ga_alt_%": 3.8411,
+          "ga_ust_%": 6.09901
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "health_beauty",
+          "n": 1391,
+          "geri_donen": 44,
+          "tekrar_alim_%": 3.163192,
+          "ga_alt_%": 2.364679,
+          "ga_ust_%": 4.219696
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "computers_accessories",
+          "n": 1187,
+          "geri_donen": 39,
+          "tekrar_alim_%": 3.285594,
+          "ga_alt_%": 2.41267,
+          "ga_ust_%": 4.459915
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "housewares",
+          "n": 1186,
+          "geri_donen": 23,
+          "tekrar_alim_%": 1.939292,
+          "ga_alt_%": 1.295672,
+          "ga_ust_%": 2.893255
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "cool_stuff",
+          "n": 1048,
+          "geri_donen": 22,
+          "tekrar_alim_%": 2.099237,
+          "ga_alt_%": 1.390323,
+          "ga_ust_%": 3.158042
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "telephony",
+          "n": 906,
+          "geri_donen": 20,
+          "tekrar_alim_%": 2.207506,
+          "ga_alt_%": 1.433484,
+          "ga_ust_%": 3.385113
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "toys",
+          "n": 899,
+          "geri_donen": 19,
+          "tekrar_alim_%": 2.113459,
+          "ga_alt_%": 1.357118,
+          "ga_ust_%": 3.277316
+        },
+        {
+          "faktor": "İlk siparişin kategorisi (en büyük 10)",
+          "seviye": "garden_tools",
+          "n": 719,
+          "geri_donen": 23,
+          "tekrar_alim_%": 3.198887,
+          "ga_alt_%": 2.14088,
+          "ga_ust_%": 4.754351
+        }
+      ]
+    },
+    "ilk_siparisi_21g_ustu_%": 12.229256
+  },
+  "sepet": {
+    "yapi": {
+      "siparis": 98197,
+      "ort_kalem": 1.141552,
+      "tek_kalemli_%": 90.060796,
+      "cok_kalemli_%": 9.939204,
+      "cok_kalemli_tek_kategori_%": 9.13979,
+      "cok_kategorili_%": 0.799413,
+      "ort_tutar_tek_kalem": 150.505612,
+      "ort_tutar_cok_kalem": 248.749047,
+      "ort_tutar_cok_kategori": 259.385694
+    },
+    "cok_kategorili_siparis_bilinen": 726,
+    "cift_sayisi": 17,
+    "cift_min_siparis": 10,
+    "cift_max_siparis": 70,
+    "dusuk_orneklemli_cift": 15,
+    "ciftler": [
+      {
+        "kategori_A": "bed_bath_table",
+        "kategori_B": "furniture_decor",
+        "birlikte_siparis": 70,
+        "A_siparis": 9399,
+        "B_siparis": 6425,
+        "destek_%": 0.071285,
+        "guven_A_B_%": 0.74476,
+        "guven_A_B_ga_alt_%": 0.589938,
+        "guven_A_B_ga_ust_%": 0.93983,
+        "guven_B_A_%": 1.089494,
+        "guven_B_A_ga_alt_%": 0.863283,
+        "guven_B_A_ga_ust_%": 1.374159,
+        "lift_tum_siparis": 0.113826,
+        "lift_cok_kategorili": 1.264368,
+        "dusuk_orneklem": false
+      },
+      {
+        "kategori_A": "bed_bath_table",
+        "kategori_B": "home_confort",
+        "birlikte_siparis": 43,
+        "A_siparis": 9399,
+        "B_siparis": 397,
+        "destek_%": 0.04379,
+        "guven_A_B_%": 0.457495,
+        "guven_A_B_ga_alt_%": 0.33984,
+        "guven_A_B_ga_ust_%": 0.615633,
+        "guven_B_A_%": 10.831234,
+        "guven_B_A_ga_alt_%": 8.141159,
+        "guven_B_A_ga_ust_%": 14.272083,
+        "lift_tum_siparis": 1.131604,
+        "lift_cok_kategorili": 3.153333,
+        "dusuk_orneklem": false
+      },
+      {
+        "kategori_A": "furniture_decor",
+        "kategori_B": "housewares",
+        "birlikte_siparis": 24,
+        "A_siparis": 6425,
+        "B_siparis": 5847,
+        "destek_%": 0.024441,
+        "guven_A_B_%": 0.373541,
+        "guven_A_B_ga_alt_%": 0.251152,
+        "guven_A_B_ga_ust_%": 0.555239,
+        "guven_B_A_%": 0.410467,
+        "guven_B_A_ga_alt_%": 0.275993,
+        "guven_B_A_ga_ust_%": 0.610061,
+        "lift_tum_siparis": 0.062734,
+        "lift_cok_kategorili": 0.841495,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "baby",
+        "kategori_B": "cool_stuff",
+        "birlikte_siparis": 20,
+        "A_siparis": 2868,
+        "B_siparis": 3616,
+        "destek_%": 0.020367,
+        "guven_A_B_%": 0.69735,
+        "guven_A_B_ga_alt_%": 0.451882,
+        "guven_A_B_ga_ust_%": 1.074721,
+        "guven_B_A_%": 0.553097,
+        "guven_B_A_ga_alt_%": 0.358334,
+        "guven_B_A_ga_ust_%": 0.852813,
+        "lift_tum_siparis": 0.189374,
+        "lift_cok_kategorili": 2.365591,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "bed_bath_table",
+        "kategori_B": "housewares",
+        "birlikte_siparis": 20,
+        "A_siparis": 9399,
+        "B_siparis": 5847,
+        "destek_%": 0.020367,
+        "guven_A_B_%": 0.212789,
+        "guven_A_B_ga_alt_%": 0.137794,
+        "guven_A_B_ga_ust_%": 0.328465,
+        "guven_B_A_%": 0.342056,
+        "guven_B_A_ga_alt_%": 0.221542,
+        "guven_B_A_ga_ust_%": 0.527779,
+        "lift_tum_siparis": 0.035737,
+        "lift_cok_kategorili": 0.718954,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "baby",
+        "kategori_B": "toys",
+        "birlikte_siparis": 19,
+        "A_siparis": 2868,
+        "B_siparis": 3855,
+        "destek_%": 0.019349,
+        "guven_A_B_%": 0.662483,
+        "guven_A_B_ga_alt_%": 0.424527,
+        "guven_A_B_ga_ust_%": 1.032433,
+        "guven_B_A_%": 0.492866,
+        "guven_B_A_ga_alt_%": 0.31576,
+        "guven_B_A_ga_ust_%": 0.768545,
+        "lift_tum_siparis": 0.168752,
+        "lift_cok_kategorili": 2.966452,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "baby",
+        "kategori_B": "bed_bath_table",
+        "birlikte_siparis": 17,
+        "A_siparis": 2868,
+        "B_siparis": 9399,
+        "destek_%": 0.017312,
+        "guven_A_B_%": 0.592748,
+        "guven_A_B_ga_alt_%": 0.370414,
+        "guven_A_B_ga_ust_%": 0.947263,
+        "guven_B_A_%": 0.18087,
+        "guven_B_A_ga_alt_%": 0.11296,
+        "guven_B_A_ga_ust_%": 0.289488,
+        "lift_tum_siparis": 0.061928,
+        "lift_cok_kategorili": 0.670251,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "furniture_decor",
+        "kategori_B": "garden_tools",
+        "birlikte_siparis": 17,
+        "A_siparis": 6425,
+        "B_siparis": 3505,
+        "destek_%": 0.017312,
+        "guven_A_B_%": 0.264591,
+        "guven_A_B_ga_alt_%": 0.165267,
+        "guven_A_B_ga_ust_%": 0.423355,
+        "guven_B_A_%": 0.485021,
+        "guven_B_A_ga_alt_%": 0.303048,
+        "guven_B_A_ga_ust_%": 0.775416,
+        "lift_tum_siparis": 0.074129,
+        "lift_cok_kategorili": 0.83285,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "health_beauty",
+        "kategori_B": "sports_leisure",
+        "birlikte_siparis": 14,
+        "A_siparis": 8799,
+        "B_siparis": 7673,
+        "destek_%": 0.014257,
+        "guven_A_B_%": 0.159109,
+        "guven_A_B_ga_alt_%": 0.094804,
+        "guven_A_B_ga_ust_%": 0.266916,
+        "guven_B_A_%": 0.182458,
+        "guven_B_A_ga_alt_%": 0.10872,
+        "guven_B_A_ga_ust_%": 0.306055,
+        "lift_tum_siparis": 0.020362,
+        "lift_cok_kategorili": 2.198572,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "furniture_decor",
+        "kategori_B": "home_construction",
+        "birlikte_siparis": 13,
+        "A_siparis": 6425,
+        "B_siparis": 489,
+        "destek_%": 0.013239,
+        "guven_A_B_%": 0.202335,
+        "guven_A_B_ga_alt_%": 0.118286,
+        "guven_A_B_ga_ust_%": 0.345897,
+        "guven_B_A_%": 2.658487,
+        "guven_B_A_ga_alt_%": 1.560085,
+        "guven_B_A_ga_ust_%": 4.494924,
+        "lift_tum_siparis": 0.406312,
+        "lift_cok_kategorili": 1.788177,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "baby",
+        "kategori_B": "furniture_decor",
+        "birlikte_siparis": 12,
+        "A_siparis": 2868,
+        "B_siparis": 6425,
+        "destek_%": 0.01222,
+        "guven_A_B_%": 0.41841,
+        "guven_A_B_ga_alt_%": 0.239511,
+        "guven_A_B_ga_ust_%": 0.729958,
+        "guven_B_A_%": 0.18677,
+        "guven_B_A_ga_alt_%": 0.106875,
+        "guven_B_A_ga_ust_%": 0.326199,
+        "lift_tum_siparis": 0.063948,
+        "lift_cok_kategorili": 0.461465,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "bed_bath_table",
+        "kategori_B": "health_beauty",
+        "birlikte_siparis": 11,
+        "A_siparis": 9399,
+        "B_siparis": 8799,
+        "destek_%": 0.011202,
+        "guven_A_B_%": 0.117034,
+        "guven_A_B_ga_alt_%": 0.065363,
+        "guven_A_B_ga_ust_%": 0.209464,
+        "guven_B_A_%": 0.125014,
+        "guven_B_A_ga_alt_%": 0.069821,
+        "guven_B_A_ga_ust_%": 0.223738,
+        "lift_tum_siparis": 0.013061,
+        "lift_cok_kategorili": 0.584541,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "construction_tools_lights",
+        "kategori_B": "furniture_decor",
+        "birlikte_siparis": 11,
+        "A_siparis": 243,
+        "B_siparis": 6425,
+        "destek_%": 0.011202,
+        "guven_A_B_%": 4.526749,
+        "guven_A_B_ga_alt_%": 2.546157,
+        "guven_A_B_ga_ust_%": 7.922743,
+        "guven_B_A_%": 0.171206,
+        "guven_B_A_ga_alt_%": 0.095627,
+        "guven_B_A_ga_ust_%": 0.306336,
+        "lift_tum_siparis": 0.691849,
+        "lift_cok_kategorili": 2.18555,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "garden_tools",
+        "kategori_B": "housewares",
+        "birlikte_siparis": 11,
+        "A_siparis": 3505,
+        "B_siparis": 5847,
+        "destek_%": 0.011202,
+        "guven_A_B_%": 0.313837,
+        "guven_A_B_ga_alt_%": 0.175333,
+        "guven_A_B_ga_ust_%": 0.561138,
+        "guven_B_A_%": 0.188131,
+        "guven_B_A_ga_alt_%": 0.105083,
+        "guven_B_A_ga_ust_%": 0.33659,
+        "lift_tum_siparis": 0.052707,
+        "lift_cok_kategorili": 1.072522,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "health_beauty",
+        "kategori_B": "perfumery",
+        "birlikte_siparis": 11,
+        "A_siparis": 8799,
+        "B_siparis": 3146,
+        "destek_%": 0.011202,
+        "guven_A_B_%": 0.125014,
+        "guven_A_B_ga_alt_%": 0.069821,
+        "guven_A_B_ga_ust_%": 0.223738,
+        "guven_B_A_%": 0.34965,
+        "guven_B_A_ga_alt_%": 0.195352,
+        "guven_B_A_ga_ust_%": 0.625057,
+        "lift_tum_siparis": 0.039021,
+        "lift_cok_kategorili": 4.629565,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "housewares",
+        "kategori_B": "sports_leisure",
+        "birlikte_siparis": 11,
+        "A_siparis": 5847,
+        "B_siparis": 7673,
+        "destek_%": 0.011202,
+        "guven_A_B_%": 0.188131,
+        "guven_A_B_ga_alt_%": 0.105083,
+        "guven_A_B_ga_ust_%": 0.33659,
+        "guven_B_A_%": 0.14336,
+        "guven_B_A_ga_alt_%": 0.08007,
+        "guven_B_A_ga_ust_%": 0.256548,
+        "lift_tum_siparis": 0.024076,
+        "lift_cok_kategorili": 1.168569,
+        "dusuk_orneklem": true
+      },
+      {
+        "kategori_A": "bed_bath_table",
+        "kategori_B": "cool_stuff",
+        "birlikte_siparis": 10,
+        "A_siparis": 9399,
+        "B_siparis": 3616,
+        "destek_%": 0.010184,
+        "guven_A_B_%": 0.106394,
+        "guven_A_B_ga_alt_%": 0.057802,
+        "guven_A_B_ga_ust_%": 0.195755,
+        "guven_B_A_%": 0.276549,
+        "guven_B_A_ga_alt_%": 0.150286,
+        "guven_B_A_ga_ust_%": 0.50835,
+        "lift_tum_siparis": 0.028893,
+        "lift_cok_kategorili": 0.555556,
+        "dusuk_orneklem": true
+      }
+    ],
+    "kategori_cok_kalem": [
+      {
+        "kategori": "furniture_decor",
+        "siparis": 6331,
+        "ort_kalem": 1.312905,
+        "cok_kalemli_pay_%": 20.375928
+      },
+      {
+        "kategori": "garden_tools",
+        "siparis": 3469,
+        "ort_kalem": 1.245027,
+        "cok_kalemli_pay_%": 16.229461
+      },
+      {
+        "kategori": "bed_bath_table",
+        "siparis": 9293,
+        "ort_kalem": 1.193264,
+        "cok_kalemli_pay_%": 14.505542
+      },
+      {
+        "kategori": "housewares",
+        "siparis": 5792,
+        "ort_kalem": 1.19596,
+        "cok_kalemli_pay_%": 12.275552
+      },
+      {
+        "kategori": "computers_accessories",
+        "siparis": 6625,
+        "ort_kalem": 1.173132,
+        "cok_kalemli_pay_%": 11.486792
+      },
+      {
+        "kategori": "pet_shop",
+        "siparis": 1700,
+        "ort_kalem": 1.145882,
+        "cok_kalemli_pay_%": 11.117647
+      },
+      {
+        "kategori": "sports_leisure",
+        "siparis": 7634,
+        "ort_kalem": 1.124443,
+        "cok_kalemli_pay_%": 9.588682
+      },
+      {
+        "kategori": "stationery",
+        "siparis": 2282,
+        "ort_kalem": 1.09816,
+        "cok_kalemli_pay_%": 7.97546
+      },
+      {
+        "kategori": "fashion_bags_accessories",
+        "siparis": 1848,
+        "ort_kalem": 1.095779,
+        "cok_kalemli_pay_%": 7.575758
+      },
+      {
+        "kategori": "health_beauty",
+        "siparis": 8760,
+        "ort_kalem": 1.098059,
+        "cok_kalemli_pay_%": 7.340183
+      },
+      {
+        "kategori": "perfumery",
+        "siparis": 3133,
+        "ort_kalem": 1.08586,
+        "cok_kalemli_pay_%": 6.766677
+      },
+      {
+        "kategori": "auto",
+        "siparis": 3855,
+        "ort_kalem": 1.090791,
+        "cok_kalemli_pay_%": 6.640726
+      },
+      {
+        "kategori": "electronics",
+        "siparis": 2533,
+        "ort_kalem": 1.089617,
+        "cok_kalemli_pay_%": 6.632452
+      },
+      {
+        "kategori": "telephony",
+        "siparis": 4166,
+        "ort_kalem": 1.084974,
+        "cok_kalemli_pay_%": 6.505041
+      },
+      {
+        "kategori": "baby",
+        "siparis": 2822,
+        "ort_kalem": 1.078668,
+        "cok_kalemli_pay_%": 5.917789
+      },
+      {
+        "kategori": "toys",
+        "siparis": 3830,
+        "ort_kalem": 1.06658,
+        "cok_kalemli_pay_%": 5.4047
+      },
+      {
+        "kategori": "watches_gifts",
+        "siparis": 5581,
+        "ort_kalem": 1.069163,
+        "cok_kalemli_pay_%": 5.017022
+      },
+      {
+        "kategori": "cool_stuff",
+        "siparis": 3587,
+        "ort_kalem": 1.056593,
+        "cok_kalemli_pay_%": 4.209646
+      }
+    ],
+    "tekrar_alanlar": {
+      "tekrar_alan": 2063,
+      "tek_kategoride_kalan_%": 36.015511,
+      "ilk_kategoriye_donen_%": 39.602521
+    }
+  },
+  "tahmin": {
+    "yeterlilik": {
+      "hafta_sayisi": 85,
+      "mevsimsellik_icin_gereken_hafta": 104,
+      "mevsimsellik_tahmin_edilebilir": false,
+      "seri_baslangic": "2017-01-02",
+      "seri_bitis": "2018-08-13"
+    },
+    "en_iyi_model": "Log-doğrusal trend (son 26 hafta)",
+    "baslangic_modeli": "Naif: son 4 hafta ortalaması",
+    "metrikler": [
+      {
+        "model": "Log-doğrusal trend (son 26 hafta)",
+        "baslangic_modeli": false,
+        "WAPE_h1-4_%": 15.773882,
+        "WAPE_h5-14_%": 18.898714,
+        "WAPE_h1-14_%": 17.946362,
+        "yanlilik_h1-14_%": 7.865007,
+        "test_sayisi": 678,
+        "baslangica_gore_iyilesme_puan": 1.091209
+      },
+      {
+        "model": "Sönümlü Holt (log ölçeği)",
+        "baslangic_modeli": false,
+        "WAPE_h1-4_%": 16.252072,
+        "WAPE_h5-14_%": 19.879699,
+        "WAPE_h1-14_%": 18.774111,
+        "yanlilik_h1-14_%": -8.121895,
+        "test_sayisi": 678,
+        "baslangica_gore_iyilesme_puan": 0.26346
+      },
+      {
+        "model": "Naif: son 4 hafta ortalaması",
+        "baslangic_modeli": true,
+        "WAPE_h1-4_%": 16.577642,
+        "WAPE_h5-14_%": 20.115932,
+        "WAPE_h1-14_%": 19.037571,
+        "yanlilik_h1-14_%": -8.615573,
+        "test_sayisi": 678,
+        "baslangica_gore_iyilesme_puan": 0.0
+      },
+      {
+        "model": "Naif: son 13 hafta ortalaması",
+        "baslangic_modeli": false,
+        "WAPE_h1-4_%": 17.986252,
+        "WAPE_h5-14_%": 23.07139,
+        "WAPE_h1-14_%": 21.521597,
+        "yanlilik_h1-14_%": -13.692373,
+        "test_sayisi": 678,
+        "baslangica_gore_iyilesme_puan": -2.484027
+      }
+    ],
+    "toplam": {
+      "toplam_taban": 3461220.601903,
+      "toplam_oran_q10_q50_q90": [
+        0.782128,
+        0.967617,
+        1.086431
+      ],
+      "toplam_icin_baslangic_sayisi": 42,
+      "haftalik_oran_ceyrekleri": {
+        "h1-4": [
+          0.75867,
+          0.976687,
+          1.262464
+        ],
+        "h5-14": [
+          0.64851,
+          0.939337,
+          1.171137
+        ]
+      },
+      "toplam_alt_%10": 2707118.161796,
+      "toplam_medyan": 3349134.816101,
+      "toplam_ust_%90": 3760377.549144,
+      "toplam_olay_senaryosu": 3811291.237252
+    },
+    "baslangic_modeli_toplam_taban": 4265423.155,
+    "haftalik_tahmin_min": 244563.529479,
+    "haftalik_tahmin_max": 249914.37323,
+    "black_friday_2017_hafta_ciro": 472699.73,
+    "black_friday_carpani": 2.43141,
+    "tahmin_baslangic": "2018-08-20",
+    "tahmin_bitis": "2018-11-25",
+    "aylik_2018_mart_temmuz_ort": 1103032.746,
+    "aylik_2018_mart_temmuz_min": 1020494.29,
+    "aylik_2018_mart_temmuz_max": 1156303.91,
+    "ocak_temmuz_2017": 2913885.69,
+    "ocak_temmuz_2018": 7597631.77,
+    "ocak_temmuz_degisim_%": 160.738841
+  }
+}

@@ -1,0 +1,5 @@
+﻿model,baslangic_modeli,WAPE_h1-4_%,WAPE_h5-14_%,WAPE_h1-14_%,yanlilik_h1-14_%,test_sayisi,baslangica_gore_iyilesme_puan
+Log-doğrusal trend (son 26 hafta),False,15.7739,18.8987,17.9464,7.865,678,1.0912
+Sönümlü Holt (log ölçeği),False,16.2521,19.8797,18.7741,-8.1219,678,0.2635
+Naif: son 4 hafta ortalaması,True,16.5776,20.1159,19.0376,-8.6156,678,0.0
+Naif: son 13 hafta ortalaması,False,17.9863,23.0714,21.5216,-13.6924,678,-2.484

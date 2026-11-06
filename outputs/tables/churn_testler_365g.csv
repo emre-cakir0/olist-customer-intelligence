@@ -1,0 +1,6 @@
+﻿karsilastirma,n_A,oran_A_%,n_B,oran_B_%,fark_puan,p_degeri,p_bonferroni,anlamli_0_05_duzeltilmis
+Teslimat ≤7 gün vs >21 gün,4486,3.2323,1576,2.665,0.5673,0.2625,1.0,False
+Zamanında vs >7 gün gecikmiş,17819,3.1483,268,1.1194,2.0289,0.0579,0.2893,False
+Yorum 5 vs 1,11139,3.3396,1354,2.8065,0.5331,0.2985,1.0,False
+3+ kalem vs 1 kalem,351,2.849,16704,3.0891,-0.2401,0.7968,1.0,False
+bed_bath_table vs cool_stuff,1795,3.454,1048,2.0992,1.3548,0.0396,0.1979,False

@@ -1,0 +1,5 @@
+﻿model,WAPE_h1-4_%,WAPE_h5-14_%,WAPE_h1-14_%,yanlilik_h1-14_%,test_sayisi
+Log-doğrusal trend (son 26 hafta),15.77,18.9,17.95,7.87,678
+Sönümlü Holt (log ölçeği),16.25,19.88,18.77,-8.12,678
+Naif: son 4 hafta ortalaması,16.58,20.12,19.04,-8.62,678
+Naif: son 13 hafta ortalaması,17.99,23.07,21.52,-13.69,678

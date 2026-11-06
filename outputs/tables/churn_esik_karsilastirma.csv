@@ -1,0 +1,3 @@
+﻿esik_gun,son_alimi_esikten_eski_musteri_%,tekrar_alanlarin_esik_icinde_donen_payi_%,penceresi_kapanmis_musteri,en_gec_ilk_teslimat,geri_donen,tekrar_alim_%,churn_%,teslimat_7g_alti_tekrar_%,teslimat_21g_ustu_tekrar_%,teslimat_farki_p,model_auc,baslangic_auc,model_test_n,model_test_pozitif
+180,59.9029,75.9089,50232,2018-02-22,898,1.7877,98.2123,2.0399,1.3837,0.0019,0.5759,0.5521,22136,342
+365,22.8012,95.7828,18496,2017-08-21,575,3.1088,96.8912,3.2323,2.665,0.2625,0.5476,0.5336,9131,292

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Olist Müşteri Rotası</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<a class="atla" href="#icerik">İçeriğe geç</a>
+
+<nav class="rota" aria-label="Bölümler">
+  <div class="rota-baslik">
+    <span class="logo-kutu" aria-hidden="true"></span>
+    <span>Olist<br>müşteri rotası</span>
+  </div>
+  <ol class="duraklar">
+    <li><a href="#giris" data-bolum="giris">Başlangıç</a></li>
+    <li><a href="#kohort" data-bolum="kohort">Kohortlar</a></li>
+    <li><a href="#donus" data-bolum="donus">Geri dönüş zamanı</a></li>
+    <li><a href="#rfm" data-bolum="rfm">RFM segmentleri</a></li>
+    <li><a href="#churn" data-bolum="churn">Müşteri kaybı</a></li>
+    <li><a href="#sepet" data-bolum="sepet">Sepet</a></li>
+    <li><a href="#tahmin" data-bolum="tahmin">Satış tahmini</a></li>
+    <li><a href="#yontem" data-bolum="yontem">Yöntem ve sözlük</a></li>
+  </ol>
+  <p class="rota-not">Veri: Olist, Brezilya, Eylül 2016 – Ağustos 2018</p>
+</nav>
+
+<div class="sayfa">
+  <form class="filtre" id="filtre" aria-label="Müşteri filtreleri">
+    <div class="filtre-alan">
+      <label for="f-bas">İlk alışveriş ayı</label>
+      <div class="ikili"><select id="f-bas"></select><span aria-hidden="true">–</span><select id="f-bit" aria-label="İlk alışveriş ayı, bitiş"></select></div>
+    </div>
+    <div class="filtre-alan">
+      <label for="f-eyalet">Eyalet</label>
+      <select id="f-eyalet"></select>
+    </div>
+    <div class="filtre-alan">
+      <label for="f-segment">RFM segmenti</label>
+      <select id="f-segment"></select>
+    </div>
+    <div class="filtre-alan genis">
+      <label for="f-kategori">İlk siparişin kategorisi</label>
+      <select id="f-kategori"></select>
+    </div>
+    <div class="filtre-ozet">
+      <output id="secili" aria-live="polite"></output>
+      <button type="button" id="temizle">Filtreleri temizle</button>
+    </div>
+  </form>
+
+  <main id="icerik">
+
+  <section id="giris" class="bolum giris">
+    <div class="giris-metin">
+      <h1 id="giris-baslik">100 müşteriden 98’i bir daha gelmedi.</h1>
+      <p class="giris-alt" id="giris-alt"></p>
+    </div>
+    <div class="koliler" id="koliler" role="img"></div>
+    <dl class="rakamlar" id="rakamlar"></dl>
+    <p class="filtre-ipucu">Üstteki filtreler Başlangıç, Kohortlar, Geri dönüş zamanı ve RFM bölümlerini değiştirir. Müşteri kaybı, sepet ve tahmin bölümleri tüm veriyi gösterir.</p>
+  </section>
+
+  <section id="kohort" class="bolum">
+    <header class="bolum-bas">
+      <h2>Her ayın yeni müşterileri sonraki aylarda ne kadar geri geliyor?</h2>
+      <p class="aciklama">Kohort, ilk alışverişini aynı ayda yapan müşteri grubudur. Her satır bir kohort, her sütun ilk alışverişten sonraki ay. Hücre, o kohorttan o ay yeniden alışveriş yapanların payı. Boş hücreler henüz gözlenmedi.</p>
+    </header>
+    <div class="kohort-duzen">
+      <div class="grafik-kutu" id="isi-harita"></div>
+      <aside class="yan-not" id="kohort-not"></aside>
+    </div>
+  </section>
+
+  <section id="donus" class="bolum">
+    <header class="bolum-bas">
+      <h2>Geri dönenler ne kadar sürede dönüyor?</h2>
+      <p class="aciklama">Yalnızca ikinci kez alışveriş yapan müşteriler. Eğri, ilk alışverişten sonra geçen gün sayısına göre bu müşterilerin ne kadarının döndüğünü gösterir. Kaydırıcıyla bir gün seçin.</p>
+    </header>
+    <div class="donus-kontrol">
+      <label for="gun-kaydir">Seçilen süre: <strong id="gun-deger">90 gün</strong></label>
+      <input type="range" id="gun-kaydir" min="1" max="600" value="90">
+      <p id="gun-sonuc" class="buyuk-cumle" aria-live="polite"></p>
+    </div>
+    <div class="grafik-kutu" id="ecdf"></div>
+  </section>
+
+  <section id="rfm" class="bolum">
+    <header class="bolum-bas">
+      <h2>RFM: müşterileri yakınlık, sıklık ve harcamaya göre gruplamak</h2>
+      <p class="aciklama">Her müşteri üç soruyla puanlandı. Puanlar 1 Eylül 2018 tarihine göre hesaplandı; veri seti bu tarihten hemen önce bitiyor.</p>
+    </header>
+    <div class="rfm-uc">
+      <div class="rfm-harf"><span class="harf">R</span><h3>Yakınlık</h3><p>Son alışverişin üzerinden kaç gün geçti? Az gün, yüksek puan.</p></div>
+      <div class="rfm-harf"><span class="harf">F</span><h3>Sıklık</h3><p>Kaç farklı günde alışveriş yaptı? Müşterilerin %97,8’i tek gün, bu yüzden yalnızca “1 gün” ve “2+ gün” diye ayrıldı.</p></div>
+      <div class="rfm-harf"><span class="harf">M</span><h3>Harcama</h3><p>Toplam kaç R$ harcadı (kargo dahil)? Çok harcama, yüksek puan.</p></div>
+    </div>
+    <div class="puan-tablo-kutu">
+      <table class="puan-tablo" id="puan-tablo"></table>
+      <p class="kucuk">R ve M puanları müşterileri beş eşit büyüklükte gruba böler. Sınırlar tüm müşterilere göre hesaplandı ve filtrelerle değişmez.</p>
+    </div>
+    <div class="rfm-duzen">
+      <div>
+        <h3 class="ara-baslik">Tek gün alışveriş yapanlar: yakınlık × harcama</h3>
+        <div class="grafik-kutu" id="rfm-izgara"></div>
+        <h3 class="ara-baslik">İki veya daha fazla gün alışveriş yapanlar</h3>
+        <div id="rfm-tekrar" class="rfm-tekrar"></div>
+        <p class="kucuk">Bir hücreye ya da segmente tıklayın; sağda açıklaması açılır.</p>
+      </div>
+      <article class="segment-kart" id="segment-kart" aria-live="polite"></article>
+    </div>
+    <h3 class="ara-baslik">Segmentlerin müşteri ve ciro payı</h3>
+    <div class="grafik-kutu" id="segment-cubuk"></div>
+  </section>
+
+  <section id="churn" class="bolum">
+    <header class="bolum-bas">
+      <h2>Kimi kaybediyoruz, kim geri geliyor?</h2>
+      <p class="aciklama">Churn (müşteri kaybı): ilk sipariş teslim edildikten sonra belirli bir süre içinde yeniden alışveriş yapmamak. Yalnızca bu süresi tamamen dolmuş müşteriler sayıldı. Ana eşik 180 gün; 365 gün karşılaştırma için.</p>
+    </header>
+    <div class="segmentli" role="radiogroup" aria-label="Churn eşiği">
+      <button type="button" role="radio" aria-checked="true" data-esik="180">180 gün</button>
+      <button type="button" role="radio" aria-checked="false" data-esik="365">365 gün</button>
+    </div>
+    <div class="churn-ust" id="churn-ust"></div>
+    <div class="churn-duzen">
+      <div>
+        <div class="etken-sec">
+          <label for="etken">Etken</label>
+          <select id="etken"></select>
+        </div>
+        <div class="grafik-kutu" id="etken-grafik"></div>
+        <p class="kucuk">Çubuk: geri dönen müşteri payı. Çizgi: %95 güven aralığı (Wilson). Aralıklar örtüşüyorsa fark belirsizdir.</p>
+      </div>
+      <div>
+        <h3 class="ara-baslik">Farklar tesadüf olabilir mi?</h3>
+        <div id="testler"></div>
+      </div>
+    </div>
+    <h3 class="ara-baslik">Model, basit bir kuraldan iyi mi?</h3>
+    <div class="model-duzen">
+      <div class="grafik-kutu" id="auc"></div>
+      <div class="grafik-kutu" id="desil"></div>
+    </div>
+  </section>
+
+  <section id="sepet" class="bolum">
+    <header class="bolum-bas">
+      <h2>Sepette ne var?</h2>
+      <p class="aciklama">Burada sepet bir sipariştir. Siparişlerin çoğu tek ürün; birden fazla kategoriyi birlikte içeren sipariş çok az olduğundan kategori çiftlerinin çoğu küçük örneklemdir.</p>
+    </header>
+    <div class="grafik-kutu" id="sepet-yapi"></div>
+    <div class="sepet-duzen">
+      <div>
+        <h3 class="ara-baslik">Birlikte alınan kategori çiftleri</h3>
+        <div id="ciftler"></div>
+      </div>
+      <div>
+        <h3 class="ara-baslik">Hangi kategoride çok ürünlü sipariş daha sık?</h3>
+        <div class="grafik-kutu" id="cok-kalem"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tahmin" class="bolum">
+    <header class="bolum-bas">
+      <h2>Önümüzdeki 14 hafta: 20&nbsp;Ağustos – 25&nbsp;Kasım&nbsp;2018</h2>
+      <p class="aciklama">Haftalık ciro ve iki tahmin. Yöntemler geçmişte, zaman sırasına göre denendi: her seferinde yalnızca o güne kadarki veri kullanıldı ve sonraki 14 hafta tahmin edilip gerçekleşenle karşılaştırıldı.</p>
+    </header>
+    <div class="segmentli" role="radiogroup" aria-label="Black Friday gösterimi">
+      <button type="button" role="radio" aria-checked="true" data-bf="temiz">Black Friday arındırılmış</button>
+      <button type="button" role="radio" aria-checked="false" data-bf="ham">Ham seri</button>
+    </div>
+    <div class="tahmin-duzen">
+      <div class="grafik-kutu" id="seri"></div>
+      <div class="tahmin-yan" id="tahmin-yan"></div>
+    </div>
+    <h3 class="ara-baslik">Yöntemlerin geçmiş testteki hatası</h3>
+    <div id="test-tablo"></div>
+    <p class="uyari" id="yeterlilik"></p>
+  </section>
+
+  <section id="yontem" class="bolum">
+    <header class="bolum-bas">
+      <h2>Yöntem, sözlük ve sınırlılıklar</h2>
+    </header>
+    <div class="yontem-duzen">
+      <div>
+        <h3 class="ara-baslik">Veri nasıl temizlendi?</h3>
+        <div id="filtre-akis"></div>
+        <h3 class="ara-baslik">Sınırlılıklar</h3>
+        <ul class="sinir" id="sinirlar"></ul>
+      </div>
+      <dl class="sozluk" id="sozluk"></dl>
+    </div>
+  </section>
+
+  <footer class="son">
+    <p>olist-customer-intelligence projesinin çıktılarından üretildi. Veriyi yenilemek için: <code>python veri_hazirla.py "&lt;proje klasörü&gt;"</code></p>
+  </footer>
+  </main>
+</div>
+
+<div class="ipucu" id="ipucu" role="tooltip" hidden></div>
+<script src="veri.js"></script>
+<script src="uygulama.js"></script>
+</body>
+</html>

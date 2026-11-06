@@ -1,0 +1,24 @@
+# Ham Olist verisi Git'e eklenmez (lisans ve boyut); bkz. data/raw/README.md
+data/raw/*
+!data/raw/README.md
+# Hattın ürettiği ara dosyalar (müşteri düzeyinde, büyük)
+data/processed/*
+!data/processed/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Editör / işletim sistemi
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.streamlit/secrets.toml
+
+# Office geçici dosyaları
+~$*
