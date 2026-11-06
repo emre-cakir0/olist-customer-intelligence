@@ -20,5 +20,22 @@ venv/
 Thumbs.db
 .streamlit/secrets.toml
 
+# Yerel sırlar ve kimlik bilgileri
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Test ve araç önbellekleri
+.coverage
+coverage.xml
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+*.log
+
 # Office geçici dosyaları
 ~$*
